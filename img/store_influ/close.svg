@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_2799" data-name="사각형 2799" transform="translate(0 .193)" style="fill:none" d="M0 0h16v16H0z"/>
+        </clipPath>
+        <style>
+            .cls-6{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-6{stroke:#d0d0d0;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="그룹_5602" data-name="그룹 5602" transform="translate(0 .188)">
+        <g id="그룹_3267" data-name="그룹 3267" class="cls-2" transform="translate(0 -.382)">
+            <g id="그룹_3269" data-name="그룹 3269" transform="translate(4.048 4.048)" style="opacity:.8">
+                <path id="선_44" data-name="선 44" class="cls-6" transform="translate(-.049 .145)" d="m0 0 8 8"/>
+                <path id="선_45" data-name="선 45" class="cls-6" transform="translate(-.049 .145)" d="M8 0 0 8"/>
+            </g>
+        </g>
+    </g>
+</svg>

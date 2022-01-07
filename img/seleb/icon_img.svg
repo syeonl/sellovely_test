@@ -1,0 +1,24 @@
+<svg id="그룹_4080" data-name="그룹 4080" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_2850" data-name="사각형 2850" style="fill:none" d="M0 0h32v32H0z"/>
+        </clipPath>
+        <style>
+            .cls-2{clip-path:url(#clip-path)}
+        </style>
+    </defs>
+    <g id="그룹_3516" data-name="그룹 3516" class="cls-2">
+        <g id="그룹_3513" data-name="그룹 3513">
+            <g id="그룹_3512" data-name="그룹 3512" class="cls-2">
+                <path id="패스_2321" data-name="패스 2321" d="M26.114 25.177H29.2V3.576H7.6v3.087" style="stroke:#000;stroke-width:2px;fill:none"/>
+            </g>
+        </g>
+        <path id="패스_2322" data-name="패스 2322" d="M20.8 26.424h-16V11.977h16zm2-16.448h-20v18.447h20z"/>
+        <g id="그룹_3515" data-name="그룹 3515">
+            <g id="그룹_3514" data-name="그룹 3514" class="cls-2">
+                <path id="패스_2323" data-name="패스 2323" d="M10.646 14.121a1.572 1.572 0 1 1-1.573 1.572 1.572 1.572 0 0 1 1.573-1.572"/>
+                <path id="패스_2324" data-name="패스 2324" d="m4 23.679 3.732-3.039 3.825 2.367 2.426-1.564L21 24.618" style="stroke-linecap:round;stroke-linejoin:round;stroke:#000;stroke-width:2px;fill:none"/>
+            </g>
+        </g>
+    </g>
+</svg>

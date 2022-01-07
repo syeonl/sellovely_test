@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff0b84;
+        stroke: rgba(0,0,0,0);
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path id="빼기_3" data-name="빼기 3" class="cls-1" d="M10.5,21A10.5,10.5,0,1,1,21,10.5,10.512,10.512,0,0,1,10.5,21ZM9.91,14.308V16.13h1.737l0-1.822Zm1.722-9.434-1.7.005.045,1.733.234,6.3h1.131Z" transform="translate(0.5 0.5)"/>
+</svg>

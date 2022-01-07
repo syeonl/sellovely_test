@@ -1,0 +1,239 @@
+/* 협찬신청 */
+.sponsored_container .sponsored_inner {width: 1200px; margin: 0 auto; position: relative;}
+
+/* 이전버튼 */
+.sponsored_inner .btn_prev {
+    display: block; 
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* 타이틀 */
+.sponsored_inner .boxing_wrap {overflow: hidden;}
+.sponsored_inner .boxing_wrap h2 {font-size: 16px; font-weight: 700; line-height: 48px; text-align: center;}
+
+.spon_box {padding: 0 20px;}
+
+.signup_container .sponsored_inner .input_wrap {padding: 0;}
+
+/* 협찬 공지 */
+.spon_box .spon_notice {padding: 15px 0; text-align: center; border-bottom: 1px solid #eee;}
+.spon_box .spon_notice p {font-size: 14px; color: #575757; white-space: pre-line; line-height: 20px;}
+
+/* 협찬공통 */
+.spon_wrap {padding: 30px 0; width: 570px; margin: 0 auto;}
+.spon_wrap .s_tit {font-size: 14px; font-weight: 700; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #575757;}
+
+/* 협찬상품 */
+.spon_wrap .line1 {border-bottom: none;}
+.spon_wrap a {display: block; margin-bottom: 10px;}
+.spon_wrap a>img {float: left; margin: 10px 15px 0 0; max-width: 55px; max-height: 55px; height: 55px;}
+.spon_wrap a>p {font-size: 14px; border-top: 1px solid #eee; padding-top: 10px;}
+
+/* 상품옵션 선택하기 */
+.select_spon {float: left; position: relative;}
+.select_spon h3 {
+    font-size: 12px; 
+    color: #898989; 
+    line-height: 30px;
+    width: 500px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+.select_spon h3:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    background: url(/assets/img/sponsored/select.svg) no-repeat 50% 50%;
+}
+.select_spon .select_wrap {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 500px;
+    padding: 8px 10px 7px;
+    border: 1px solid #d0d0d0;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+    z-index: 9;
+}
+.select_spon .select_wrap:after {display: none;}
+.select_spon .select_wrap li {font-size: 12px; margin: 18px 0; cursor: pointer;}
+.select_spon .select_wrap li:first-child {margin-top: 0;}
+.select_spon .select_wrap li:last-child {margin-bottom: 0;}
+
+/* 상품 옵션 선택했을때 나오는 박스 */
+.select_spon_d {border-top: 1px solid #eee; margin-top: 50px;}
+.select_spon_d .btn_X {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url(/assets/img/store_influ/close.svg) no-repeat 50% 50%;
+    width: 11px;
+    height: 11px;
+    border: none;
+    text-indent: -9999px;
+}
+.select_spon_d ul li {position: relative; border-radius: 5px; border: 1px solid #d0d0d0; width: 570px; height: 58px; background: #fff; margin-top: 10px; padding: 10px;}
+.select_spon_d ul li p {font-size: 12px; line-height: unset; margin-bottom: 12px;}
+.select_spon_d ul li p>span {font-size: 12px; color: #b2b2b2; margin-right: 10px; text-decoration: line-through;}
+
+/* 협찬미션 */
+.spon_wrap .line2 {/* border-top: 1px solid #eee; */ padding-top: 30px;}
+.spon_wrap p, .spon_wrap ol>li {font-size: 14px; line-height: 25px;}
+
+.spon_wrap.point {padding-top: 0; margin-top: -20px;}
+.spon_wrap em {font-size: 12px; line-height: 20px; margin: 10px 0 0 0; display: block;}
+
+/* 협찬 안내사항 - 동의 체크 버튼 */
+.btn_check {
+    border: none;
+    height: 30px;
+    padding-left: 40px;
+    margin-top: 36px;
+    background: url(/assets/img/sponsored/check.svg) no-repeat 0% 50%;
+}
+.btn_check.on {
+    background-image: url(/assets/img/sponsored/check_on.svg);
+}
+
+/* 협찬 기본 정보 기입 */
+.spon_info {border-top: 4px solid #eee;}
+.spon_info .s_tit {border: none; font-weight: 400; margin-top: 20px; padding: 0;}
+
+.spon_wrap .checkbox_wrap label {font-size: 13px; padding-left: 25px;}
+.spon_wrap .checkbox_wrap label:before {width: 16px; height: 16px; top: -2px; transition: none;}
+.spon_wrap .checkbox_wrap input[type="checkbox"]:checked+label:before {
+    background: url(/assets/img/sponsored/check_box.svg) no-repeat 50% 50%;
+}
+
+.spon_wrap .input_wrap {display: block; width: 100%;}
+.spon_wrap .input_wrap input {
+    font-size: 14px; 
+    color: #b2b2b2; 
+    padding: 0 10px; 
+    width: 100%; 
+    height: 48px; 
+    border: 1px solid #d0d0d0;
+}
+
+.sponsored_container .spon_wrap .input_search {position:static; width: 100%; transform: none;} 
+.sponsored_container .spon_wrap .input_search .search {
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.spon_wrap .input_search .address {display: flex;}
+.spon_wrap .input_search .address .search {margin: 0;}
+/* 주소검색 버튼 */
+.sponsored_container .spon_wrap .input_search .btn_search {
+    font-size: 14px;
+    color: #575757 ;
+    position: static;
+    transform: none;
+    width: 102px ;
+    height: 50px ;
+    margin-left: 10px;
+    padding-left: 20px;
+    border: none ;
+    border-radius: 5px ;
+    background: #f2f2f2 url(/assets/img/sponsored/btn_search.svg) no-repeat 8px 50% ;
+}
+
+/* 협찬 요청 사유 */
+.spon_wrap p textarea {font-size: 14px; color: #b2b2b2; padding: 15px 15px; height: 140px; border-color: #d0d0d0;}
+
+/* 협찬 신청 버튼 */
+.btn_register {
+    background: linear-gradient( to right, #ff6700, #ff008e ); 
+    border: none; 
+    border-radius: 5px;
+    color: #fff; 
+    font-size: 14px; 
+    font-weight: 700; 
+    line-height: 50px;
+    width: 570px;
+    margin: 20px auto;
+}
+
+
+/* 협찬 신청 내역 */
+.spon_wrap {position: relative;}
+.spon_wrap .nope {margin-top: 20px; font-size: 12px; color: #898989;}
+.spon_icon {display: flex; position: absolute; right: 0; bottom: 0;}
+.spon_icon li>a {display: block; font-size: 12px; line-height: 25px; border: solid 1px #eee; padding: 4px 10px; border-radius: 5px; margin-left: 10px;}
+
+
+
+/* 협찬 상세 내역 */
+.spon_wrap .line1 {display: inline-block; margin: 0;}
+
+.spon_wrap2 .spon {float: right;}
+.spon_wrap2 p em {font-size: 14px; font-weight: 700; text-align: right;}
+
+.spon_wrap2 a>span {display: block; font-size: 12px; color: #898989;}
+.spon_wrap2 .day {margin: 5px 0;}
+.spon_wrap2 .price {float: left; margin-top: 22px;}
+.spon_wrap2 .num {float: right; margin-top: 22px;}
+
+.spon_wrap .address_txt {color: #898989;}
+
+.spon_wrap.mb0 {padding: 30px 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+                                                            Mediaqery
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width:1200px) {
+    .sponsored_container .sponsored_inner {width: 100%; margin: 0;}
+    .signup_container .sponsored_inner .input_wrap {border-image: none; border: none; margin: 0;}
+    .sponsored_inner .boxing_wrap h2 {border-bottom: 1px solid #eee;}
+}
+@media (max-width:600px) {
+    .sponsored_container .sponsored_inner {width: 100%; margin: 0;}
+    .sponsored_inner .boxing_wrap h2 {border-bottom: 1px solid #eee;}
+    .spon_wrap {width: 100%; margin: 0;  padding-bottom: 0;}
+    .select_spon_d ul li {width: 100%;}
+    .spon_wrap a {border-top: 1px solid #eee;}
+    .spon_wrap a>p {
+        max-height: 40px;
+        display: -webkit-box;
+        overflow: hidden;
+        word-break: break-word;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        border-top: none;
+    }
+
+    .select_spon {width: 70%;}
+    .select_spon h3 {width: 100%;}
+    .select_spon .select_wrap {width: 100%;}
+
+    .btn_register {width: 100%;}
+}

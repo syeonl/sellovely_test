@@ -1,0 +1,134 @@
+
+
+/********************* 고객센터 페이지 *********************/
+.signup_container .service_inner {padding: 0;}
+.service_inner .input_wrap {width: 100%;}
+.service_inner .selebmoney_wrap {top: -44px;}
+#container .service_inner .prof_wrap .input_wrap .icon_wrap .icon {top: -70px;}
+
+#container .service_inner h2 {display: block;}
+#container .service_inner .btn_list { font-size: 12px; color: #898989; position: absolute; right: 20px; top: 20px;}
+/* FAQ */
+.service_tab {
+    width: 1200px; 
+    margin: 14px auto; 
+    margin-bottom: 0 !important;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #ff6700, #ff0b84);
+    border-image-slice: 1;
+}
+.service_tab .sub_tab_menu {width: 360px; margin: 40px auto; border: none;}
+.service_tab .sub_tab_menu li { border-bottom: 2px solid #eee;}
+.service_tab .sub_tab_menu li>a {line-height: 38px; display: block;}
+.FAQ_box {width: 1200px; min-height: 40vh; margin: 0 auto;}
+.FAQ_wrap {padding: 33px 20px 25px;}
+.sub_tab_menu {text-align: center; overflow: hidden; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.sub_tab_menu li {float: left; width: 50%;}
+.sub_tab_menu li.on {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #ff6700, #ff008e);
+    border-image-slice: 1;
+}
+.sub_tab_menu li.on>a {color: #000;}
+.sub_tab_menu li>a {font-size: 14px; color: #b2b2b2; line-height: 50px;}
+
+/* 선택학기 */
+/* .select_FAQ {position: relative;} */
+.select_FAQ h3 {font-size: 14px; color: #575757; line-height: 48px; margin: 0 0 20px; padding: 0 20px; border: 1px solid #d0d0d0; border-radius: 5px; cursor: pointer; position: relative;}
+.select_FAQ h3:after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: url(/assets/img/btn_down02.svg) no-repeat 50% 50%;
+}
+.select_FAQ_wrap {
+    display: none;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 52px; */
+    /* transform: translateX(-50%); */
+    width: 100%;
+    background: #fff;
+    border: 1px solid #d0d0d0; 
+    border-top: none;
+    border-radius: 0 0 5px 5px; 
+    padding: 15px 20px;
+    margin-top: -20px;
+}
+.select_FAQ_wrap li {font-size: 14px; color: #575757; cursor: pointer;}
+.select_FAQ_wrap li+li {margin-top: 15px;}
+
+
+
+/* FAQ */
+.service_wrap li {padding: 26px 0; border-bottom: 1px solid #eee; cursor: pointer;}
+.service_wrap li:last-child {border-bottom:none;}
+.service_wrap li>em, .service_wrap .answer>em {font-size: 16px; font-weight: 700; margin: 0 10px 0 0; float: left;}
+.service_wrap li>p {font-size: 14px; position: relative; padding: 0 30px 0 20px; line-height: 20px;}
+.service_wrap li>p:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: url(/assets/img/btn_down.svg) no-repeat 50% 50%;
+}
+.service_wrap li>p:after.on {background-image: url(/assets/img/btn_up.svg);}
+
+.service_wrap .answer {margin-top: 24px; display: none;}
+.service_wrap .answer>p {line-height: 20px; padding: 0 20px;}
+
+/* 공지사항 */
+.notice_box {
+    width: 1200px; 
+    margin: 0 auto;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #ff6700, #ff0b84);
+    border-image-slice: 1;
+}
+.notice_box2 {
+    border-top: none;
+    border-image: none;
+    border-image-slice: 0;
+} 
+.important_ {padding: 20px;}
+.important_tit {padding: 20px 40px; text-align: center; border-bottom: 10px solid #eee;}
+.important_tit p {font-size: 11px; color: #b2b2b2;}
+
+.sellovely_notice {border-bottom: 1px solid #eee; padding-bottom: 15px; height: 60vh;}
+.sellovely_notice li {margin-top: 15px;}
+.sellovely_notice li+li {border-top: 1px solid #eee;}
+.important_ p {font-size: 14px; line-height: 20px; font-weight: 700; margin-bottom: 2px; cursor: pointer;}
+.important_ span {font-size: 12px; color: #575757; font-weight: 300;}
+.important_txt {padding: 20px; font-size: 12px; line-height: 20px; border-top: 1px solid #eee;}
+
+.sellovely_notice2 {height: 100%;}
+.sellovely_notice2 li {border-top: 1px solid #eee;}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+                                                            Mediaqery
+------------------------------------------------------------------------------------------------------------------------------------*/
+/* 타블렛분기점 */
+@media (max-width: 1200px) {
+    /* FAQ */
+    .service_inner .service_tab {width: 100%;}
+    .FAQ_box {width: 100%;}
+    .notice_box {width: 100%;}
+    .important_tit p {line-height: 16px;}
+    .important_tit p br {display: none;}
+
+    #container.signup_container .store_inner .prof_wrap {display: none;}
+    #container.signup_container .store_inner .service_tab {border-image: none; border: none;}
+    .service_tab .sub_tab_menu {width: 100%; margin: 0; border-top: 1px solid #eee;}
+    /* .signup_container .store_inner {padding: 0;} */
+    .store_container .store_inner {padding: 0;}
+
+
+
+}

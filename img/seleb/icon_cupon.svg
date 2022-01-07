@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_4179" data-name="사각형 4179" transform="translate(274.673 501.983)" style="fill:none" d="M0 0h40v40H0z"/>
+        </clipPath>
+        <style>
+            .cls-5{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-5{stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="그룹_4976" data-name="그룹 4976" transform="translate(-274.673 -501.983)">
+        <g id="그룹_4996" data-name="그룹 4996">
+            <g id="그룹_4995" data-name="그룹 4995" class="cls-2">
+                <g id="그룹_3561" data-name="그룹 3561">
+                    <g id="그룹_3560" data-name="그룹 3560">
+                        <g id="그룹_4994" data-name="그룹 4994">
+                            <g id="그룹_4993" data-name="그룹 4993" class="cls-2">
+                                <g id="그룹_3559" data-name="그룹 3559">
+                                    <path id="패스_2341" data-name="패스 2341" d="M307.073 514.483a3.394 3.394 0 0 0 .6 4.741v.086a3.384 3.384 0 0 0 0 5.342v.089a3.394 3.394 0 0 0-.6 4.742h-24.8a3.393 3.393 0 0 0-.6-4.742v-.085a3.384 3.384 0 0 0 0-5.342v-.091a3.392 3.392 0 0 0 .6-4.74zm2.6-2h-30v2.717a1.358 1.358 0 0 1 0 2.714v2.715a1.358 1.358 0 0 1 .006 2.714h-.006v2.713a1.359 1.359 0 0 1 0 2.715v2.715h30v-2.715a1.358 1.358 0 0 1 0-2.714v-2.717h-.006a1.358 1.358 0 0 1 0-2.714h.006v-2.714a1.359 1.359 0 0 1 0-2.715z"/>
+                                    <path id="선_59" data-name="선 59" class="cls-5" transform="translate(303.672 514.483)" d="M0 0v2"/>
+                                    <path id="선_60" data-name="선 60" class="cls-5" transform="translate(303.672 520.483)" d="M0 0v3"/>
+                                    <path id="선_61" data-name="선 61" class="cls-5" transform="translate(303.672 527.483)" d="M0 0v2"/>
+                                    <path id="패스_2342" data-name="패스 2342" d="M295.173 524.483a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zm0-2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 0-5"/>
+                                    <path id="패스_2343" data-name="패스 2343" d="M289.173 518.483a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zm0-2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 0-5"/>
+                                    <path id="선_62" data-name="선 62" class="cls-5" transform="translate(287.672 517.483)" d="m0 9 9-9"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: aqua;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #b2b2b2;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: #b2b2b2;
+      }
+    </style>
+  </defs>
+  <g id="그룹_5913" data-name="그룹 5913" transform="translate(-821 -2.25)">
+    <rect id="사각형_5119" data-name="사각형 5119" class="cls-1" width="40" height="40" transform="translate(821 2.25)"/>
+    <g id="그룹_5777" data-name="그룹 5777">
+      <g id="그룹_5776" data-name="그룹 5776">
+        <g id="타원_279" data-name="타원 279" class="cls-2" transform="translate(836 18)">
+          <circle class="cls-4" cx="5" cy="5" r="5"/>
+          <circle class="cls-5" cx="5" cy="5" r="4.5"/>
+        </g>
+        <g id="타원_280" data-name="타원 280" class="cls-2" transform="translate(838.5 20.5)">
+          <circle class="cls-4" cx="2.5" cy="2.5" r="2.5"/>
+          <circle class="cls-5" cx="2.5" cy="2.5" r="2"/>
+        </g>
+      </g>
+      <g id="패스_2697" data-name="패스 2697" class="cls-3">
+        <path class="cls-4" d="M849,16l-2-3H835l-2,3h-3V31h22V16Z"/>
+        <path class="cls-6" d="M 835.53515625 14 L 833.83203125 16.55470085144043 C 833.6466064453125 16.83289909362793 833.3343505859375 17 833 17 L 831 17 L 831 30 L 851 30 L 851 17 L 849 17 C 848.6656494140625 17 848.3533935546875 16.83289909362793 848.16796875 16.55470085144043 L 846.46484375 14 L 835.53515625 14 M 835 13 L 847 13 L 849 16 L 852 16 L 852 31 L 830 31 L 830 16 L 833 16 L 835 13 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

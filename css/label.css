@@ -1,0 +1,50 @@
+/* 판매상품목록 */
+.signup_container .product_inner {margin: 20px auto;}
+
+/* 네이버 버튼 */
+.product_wrap li {position: relative;}
+.product_inner {position: relative;}
+.product_wrap .btn_naver>img {height: 18px;}
+.store_container .influ_inner .goods .list_price>span {margin: 10px 0;}
+.btn_naver {
+    position: absolute;
+    left: 62px;
+    bottom: -3px;
+
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+                                                            Mediaqery
+
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* 타블렛분기점 */
+@media (max-width: 1200px) {
+    /* .product_wrap .btn_naver { */
+        /* position: absolute; */
+        /* left: 130px; */
+        /* bottom: 23px; */
+    /* } */
+    .common_tit {padding: 0 20px;}
+}
+@media (max-width: 900px) {
+}
+@media (max-width: 767px) {
+    #container.home_container .home_store_tit {display: block !important; left: unset !important;}
+}
+
+@media (max-width: 400px) {
+    .btn_naver {left: 68px;}
+}
+
+@media (max-width: 360px) {
+
+}
+@media (max-width: 320px) {
+}
+
+@media (max-width: 280px) {
+}

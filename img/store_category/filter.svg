@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_3988" data-name="사각형 3988" transform="translate(0 .202)" style="fill:none" d="M0 0h20v20H0z"/>
+        </clipPath>
+        <style>
+            .cls-5{fill:#231815}.cls-6{fill:#fff}
+        </style>
+    </defs>
+    <g id="그룹_4354" data-name="그룹 4354" transform="translate(-231 -239.202)">
+        <g id="그룹_4352" data-name="그룹 4352" transform="translate(233.525 242.367)">
+            <path id="사각형_2827" data-name="사각형 2827" class="cls-5" transform="translate(1.776)" d="M0 0h1.684v13.468H0z"/>
+            <path id="패스_2308" data-name="패스 2308" class="cls-6" d="M236.525 251a2.525 2.525 0 1 1-2.525 2.525 2.525 2.525 0 0 1 2.525-2.525" transform="translate(-234 -244.266)"/>
+            <path id="패스_2309" data-name="패스 2309" class="cls-5" d="M236.525 252.263a1.263 1.263 0 1 1-1.263 1.263 1.263 1.263 0 0 1 1.263-1.263m0-1.263a2.525 2.525 0 1 0 2.525 2.525 2.525 2.525 0 0 0-2.525-2.525" transform="translate(-234 -244.266)"/>
+            <path id="사각형_2828" data-name="사각형 2828" class="cls-5" transform="translate(6.826)" d="M0 0h1.684v13.468H0z"/>
+            <path id="패스_2310" data-name="패스 2310" class="cls-6" d="M242.634 246a2.525 2.525 0 1 1-2.525 2.525 2.525 2.525 0 0 1 2.525-2.525" transform="translate(-234.967 -243.475)"/>
+            <path id="패스_2311" data-name="패스 2311" class="cls-5" d="M242.634 247.263a1.263 1.263 0 1 1-1.263 1.263 1.263 1.263 0 0 1 1.263-1.263m0-1.263a2.525 2.525 0 1 0 2.525 2.525 2.526 2.526 0 0 0-2.525-2.525" transform="translate(-234.967 -243.475)"/>
+            <path id="사각형_2829" data-name="사각형 2829" class="cls-5" transform="translate(11.877)" d="M0 0h1.684v13.468H0z"/>
+            <path id="패스_2312" data-name="패스 2312" class="cls-6" d="M248.744 249a2.525 2.525 0 1 1-2.525 2.525 2.525 2.525 0 0 1 2.525-2.525" transform="translate(-235.934 -243.949)"/>
+            <path id="패스_2313" data-name="패스 2313" class="cls-5" d="M248.744 250.263a1.263 1.263 0 1 1-1.263 1.263 1.263 1.263 0 0 1 1.263-1.263m0-1.263a2.525 2.525 0 1 0 2.525 2.525 2.525 2.525 0 0 0-2.525-2.525" transform="translate(-235.934 -243.949)"/>
+        </g>
+    </g>
+</svg>

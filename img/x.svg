@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: aqua;
+      }
+
+      .cls-5 {
+        opacity: 0.8;
+      }
+
+      .cls-6 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_2799" data-name="사각형 2799" class="cls-1" width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_3268" data-name="그룹 3268" transform="translate(0 0.382)">
+    <g id="그룹_3267" data-name="그룹 3267" class="cls-2" transform="translate(0 -0.382)">
+      <g id="그룹_3266" data-name="그룹 3266">
+        <g id="그룹_3265" data-name="그룹 3265" class="cls-2">
+          <g id="그룹_3264" data-name="그룹 3264" class="cls-3">
+            <g id="그룹_3263" data-name="그룹 3263">
+              <g id="그룹_3262" data-name="그룹 3262" class="cls-2">
+                <rect id="사각형_2796" data-name="사각형 2796" class="cls-4" width="24" height="24"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="그룹_3269" data-name="그룹 3269" class="cls-5" transform="translate(6 6)">
+        <line id="선_44" data-name="선 44" class="cls-6" x2="12" y2="12"/>
+        <line id="선_45" data-name="선 45" class="cls-6" x1="12" y2="12"/>
+      </g>
+    </g>
+  </g>
+</svg>

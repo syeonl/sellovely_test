@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: aqua;
+      }
+
+      .cls-5 {
+        fill: #ff008e;
+      }
+
+      .cls-6 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_2894" data-name="사각형 2894" class="cls-1" width="32" height="32" transform="translate(0)"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_3740" data-name="그룹 3740" transform="translate(0.106)">
+    <g id="그룹_3610" data-name="그룹 3610" class="cls-2" transform="translate(-0.105)">
+      <g id="그룹_3609" data-name="그룹 3609">
+        <g id="그룹_3608" data-name="그룹 3608" class="cls-2">
+          <g id="그룹_3607" data-name="그룹 3607" class="cls-3">
+            <g id="그룹_3606" data-name="그룹 3606">
+              <g id="그룹_3605" data-name="그룹 3605" class="cls-2">
+                <rect id="사각형_2891" data-name="사각형 2891" class="cls-4" width="32" height="32" transform="translate(0)"/>
+              </g>
+            </g>
+          </g>
+          <path id="패스_2360" data-name="패스 2360" class="cls-5" d="M16.337,2h0A14.337,14.337,0,1,1,2,16.337,14.337,14.337,0,0,1,16.337,2" transform="translate(-0.266 -0.407)"/>
+          <path id="패스_2361" data-name="패스 2361" class="cls-6" d="M12.219,17.584,17.9,23.558,25.362,14" transform="translate(-2.346 -2.849)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

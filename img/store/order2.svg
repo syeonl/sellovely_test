@@ -1,0 +1,18 @@
+<svg id="그룹_5002" data-name="그룹 5002" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_2878" data-name="사각형 2878" style="fill:none" d="M0 0h40v40H0z"/>
+        </clipPath>
+        <style>
+            .cls-5,.cls-6{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-5,.cls-6{stroke:#000;stroke-linecap:round;stroke-width:2px}.cls-5{stroke-linejoin:round}.cls-6{stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="그룹_3576" data-name="그룹 3576" class="cls-2">
+        <path id="패스_2347" data-name="패스 2347" class="cls-5" d="M30.746 26.434V13.3L19.373 6.734 8 13.3v13.134L19.373 33z"/>
+        <path id="패스_2348" data-name="패스 2348" class="cls-5" d="m30.746 13.3-11.372 6.62L8 13.3"/>
+        <path id="선_63" data-name="선 63" class="cls-6" transform="translate(24.104 21.269)" d="M2.607 0 0 1.518"/>
+        <path id="패스_2349" data-name="패스 2349" class="cls-5" d="M12.731 10.539 24.1 17.161v5.627"/>
+        <path id="패스_2350" data-name="패스 2350" class="cls-5" d="m15.339 9.066 11.372 6.622v5.582"/>
+        <path id="선_64" data-name="선 64" class="cls-6" transform="translate(19.373 19.92)" d="M0 13.076V0"/>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #43e5a0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="그룹_5515" data-name="그룹 5515" transform="translate(-480.3 -302.364)">
+    <circle id="타원_254" data-name="타원 254" class="cls-1" cx="6" cy="6" r="6" transform="translate(480.3 302.364)"/>
+    <path id="패스_2680" data-name="패스 2680" class="cls-2" d="M488.965,308.364l-4.414-2.548v5.1Z"/>
+  </g>
+</svg>

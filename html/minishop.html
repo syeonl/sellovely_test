@@ -1,0 +1,2207 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>인플루언서 매칭 플랫폼 | 셀러블리</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="google-site-verification" content="TVIZPyT0AGTBwx6IaZ68vApNu_2CeU6FmC8SPSo-z7U" />
+    <meta name="naver-site-verification" content="70e6e3ce37aabf7c12c09e7ef6f27ed12ade541e" />
+    <meta name="facebook-domain-verification" content="7f427d5fiw28pgmqe36wirl79b6gp1" />
+    <meta name="keywords" content="셀러블리, 인스타그램, 샐러블리, SELLOVELY, 인플루언서, 공동구매, 인스타공동구매, 공구사이트, SNS공동구매" />
+    <meta name="description" content="라이브 방송, 마케팅, 판매를 한 번에! 셀러블리 신나는 인플루언서 커머스에서 수익 활동을 시작하세요 사전 가입시 8,720셀러머니 무조건 지급.  one-stop-solution" />
+        <link rel="SHORTCUT ICON" href="/data/sellovely/favicon.ico?2021093012" />
+
+    <meta name="classification" content="셀러블리, 인스타그램, 샐러블리, SELLOVELY, 인플루언서, 공동구매, 인스타공동구매, 공구사이트, SNS공동구매" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="셀러블리&#128149; - &#127752;인플루언서 매칭 플랫폼">
+    <meta property="og:description" content="제품이 없어도 OK! 판매 경험이 없어도 OK! 쉽고 빠른 인플루언서 커머스 셀러블리에서 수익 활동을 시작하세요! 사전 가입시 8,720셀러머니 즉시 지급&#127881; Sellovely">
+    <meta property="og:image" content="https://www.sellovely.com/data/sellovely/imgSNS.gif?2021093012">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="/m/css/googleapisicon.css?family=Material+Icons">
+
+    <link rel="stylesheet" type="text/css" href="/m/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/m/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="/m/css/jquery.mobile-1.4.5.min.css" />
+
+    <!-- alert창 레이어로 -->
+    <link rel="stylesheet" type="text/css" href="/m/css/sweetalert.css" />
+    <link rel="stylesheet" type="text/css" href="/m/css/docs.css" />
+    <link rel="stylesheet" type="text/css" href="/m/css/layout.css" />
+    <!-- alert창 레이어로 끝 -->
+    <link rel="stylesheet" type="text/css" href="/m/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="/m/css/commontotal.css" />
+    <link rel="stylesheet" type="text/css" href="/m/css/_subcommon.css" />
+    <link rel="stylesheet" type="text/css" href="/m/css/_celeb.css" />
+    <link rel="stylesheet" type="text/css" href="/m/css/_podoal.css" />
+    <link rel="stylesheet" type="text/css" href="/addon/story/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/minishop.css?2021093012" />
+    <link href="http://local.sellovely.com/minishop/css/jquery.imageview.css" type="text/css" rel="stylesheet" />
+    
+
+    <!-- jscript 글로벌변수 선언부  -->
+
+    <script>
+    //' ######################################################################
+    //Server Const Start
+    //' ######################################################################
+    //업로드 관련
+    var UPLOAD_MAX_SIZE_GOODS = 10240000;
+
+    //상품등록 항목 최대개수
+    var MAX_AMT_IMGETC = 9;		//다른이미지
+    var MAX_AMT_RELATE = 99;		//관련추천상품 (최대 99개까지, 0으로 설정할 경우 무제한)
+    var MAX_AMT_OPTION = 10;
+
+    var PRICE_ROUND_UNIT = 0;		//가격 계산시 절사단위 = -1 : 10원 단위, -2 : 100원 단위, -3 : 1000원 단위
+
+    var DELIMITER = '<%=DELIMITER%>';		//기본 구분자
+    var DELIMITER1 = '<%=DELIMITER1%>';		//추가 구분자1
+    var DELIMITER_OPTION = '<%=DELIMITER_OPTION%>';		//옵션정보 구분자 (',', '/' 제외)
+    var DELIMITER_VOCAB = '<%=DELIMITER_VOCAB%>';		//어휘 구분자
+
+    //적용단위
+    var CM_APPUNIT_WON = '<%=CM_APPUNIT_WON%>';
+    var CM_APPUNIT_PCT = '<%=CM_APPUNIT_PCT%>';
+
+    var CM_LCS_DEVICE_ID = '<%=CM_LCS_DEVICE_ID%>';		//로컬 스토리지 디바이스 아이디
+
+    var CM_LCS_SEARCH_WORD = "<%=CM_LCS_SEARCH_WORD%>";		//로컬 스토리지 검색어
+    //' ######################################################################
+    //Server Const End
+    //' ######################################################################
+
+
+
+    //' ######################################################################
+    //Config Variable Start
+    //' ######################################################################
+    var cfgIsSSL = 'T';			                    //SSL 사용 여부
+    var cfgisSweetTracker = 'T';			//SweetTracker 사용 여부
+    //' ######################################################################
+    //Config Variable End
+    //' ######################################################################
+
+
+
+    //' ######################################################################
+    //Global Variable Start
+    //' ######################################################################
+    //Global Variable
+    var gloUserAgent = navigator.userAgent;
+    var gloUserAgentLCase = gloUserAgent.toLowerCase();
+    var gloChkApp = '';		//어플 접속 확인
+    var gloDeviceID = '';		//디바이스아이디
+    var gloToday = new Date();
+
+    var gloDoubleSubmitFlag	= false;		//이중 전송 방지
+    var gloRefreshFlag = true;		//새로고침 무한 루프 방지
+
+    //모바일 페이지를 PC 에서도 확인한다고하여 기본값을 보이게 처리
+    var gloView_M_Category = true;		//false;		//모바일 카테고리 보이기 설정
+    var gloView_PC_Category = true;		//false;		//PC 카테고리 보이기 설정
+
+    var gloChk_Mobile = false;		//모바일 접속 여부
+    if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
+        || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) {
+        gloChk_Mobile = true;
+    }
+
+    // 카카오 공유 appkey
+    var cfgKkAppKey = '95db54b201d26cb5b602a336a8040862';
+
+    //if ( gloChk_Mobile ) {
+    //	gloView_M_Category = true;
+    //} else {
+    //	gloView_PC_Category = true;
+    //}
+    //' ######################################################################
+    //Global Variable End
+    //' ######################################################################
+
+    gloView_M_Category = true;
+    gloView_PC_Category = true;
+
+    //2021-03-10 khs : 기본 웹소켓URL 셋팅
+    window.webSocketUrl = "wss://chat.mallup.co.kr:8183";
+    window.list_vod_play_time = 10000;
+</script>
+    <!-- <script language="javascript" src="/m/js/jquery-1.9.1.min.js"></script> -->
+    <script language="javascript" src="/m/jscript/jquery-1.12.4.min.js"></script>
+
+    <script>
+        //검색어 상수
+        var CM_LCS_SEARCH_WORD = "sword";
+    </script>
+
+    <script language="javascript" src="/m/js/JsBarcode.code128.min.js"></script>
+    <script language="javascript" src="/jscript/slick.min.js"></script>
+    <script language="javascript" src="/m/js/imagesloaded.pkgd.min.js"></script>
+    <script language="javascript" src="/m/js/masonry.pkgd.min.js"></script>
+    <script language="javascript" src="/m/jscript/jquery.easing.1.3.js"></script>
+    <script language="javascript" src="/jscript/wow.min.js"></script>
+    <script language="javascript" src="/jscript/jquery-ui.js"></script>
+    <script language="javascript" src="/m/jscript/swiper.min.js"></script>
+    <!-- <script language="javascript" src="/m/jscript/jquery.mobile-1.4.5.min.js"></script> -->
+    <!-- <script language="javascript" src="/m/jscript/jquery.mobile-1.4.5.js"></script> -->
+
+    <script language="javascript" src="/m/jscript/mobile.js"></script>
+
+    <script language="javascript" src="/m/jscript/user_func.js?ver=1.1"></script>
+    <script language="javascript" src="/m/jscript/common.js?2021093012"></script>
+    <script language="javascript" src="/m/jscript/cookie.js"></script>
+    <script language="javascript" src="/m/jscript/ajax.js"></script>
+    <script language="javascript" src="/m/jscript/app_connect.js"></script>
+
+    <!-- alert창 레이어로 -->
+    <!-- <script language="javascript" src="/m/jscript/sweetalert.js"></script> -->
+    <script language="javascript" src="/m/jscript/sweetalert.min.js"></script>
+    <!-- alert창 레이어로 끝 -->
+
+    <script language="javascript" src="/jscript/jquery.bxslider.min.js"></script>
+    <script language="javascript" src="/jscript/clipboard.min.js"></script>
+
+    
+
+
+    <script>
+        //사파리에서(ios) 뒤로가기시 로딩나올때...
+        $(window).bind("pageshow", function (event) {
+            if (event.originalEvent && event.originalEvent.persisted) {
+                window.location.reload();
+            }
+        });
+    </script>
+
+
+    <script src='/jscript/jquery.visible.js'></script>
+    <script>
+        var cfgkakaotalkCode = "e9ec47a711fe2a86d7beda61b52e1101";
+        var siteURL = "";
+        var smsBodyDelim = "";
+        var pathSite = "/data/sellovely";
+        var cfgCategoryType = "0";
+        var pathLeftmenu = "/data/sellovely/leftmenu";
+    </script>
+    <!--  광고/스크립트 영역 불러오기  -->
+    
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TN5FL6X');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN5FL6X" height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!--  // 광고/스크립트 영역 불러오기  -->
+    <!-- Facebook Pixel Code -->
+
+    <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+
+            fbq('init', '264373612189222');
+            fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=264373612189222&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body bgcolor="#FFFFFF">
+    <script type="text/javascript">
+    //<![CDATA[
+
+    //deviceid Check
+    if ((/\;deviceid=/ig).test(gloUserAgent) || (/\&deviceid=/ig).test(gloUserAgent)) {
+        var s1, s2;
+        if ((/\;deviceid=/ig).test(gloUserAgent)) {
+            s1 = gloUserAgent.split('\;deviceid=');
+            if (s1[1] == undefined) s1 = gloUserAgent.split('\;deviceId=');
+            s2 = s1[1].split('\;');
+        } else {
+            s1 = gloUserAgent.split('\&deviceid=');
+            if (s1[1] == undefined) s1 = gloUserAgent.split('\&deviceId=');
+            s2 = s1[1].split('\&');
+        }
+        gloDeviceID = s2[0];
+
+        //디바이스아이디 저장
+        setCookie(CM_LCS_DEVICE_ID, gloDeviceID, 30);
+        localStorage.setItem(CM_LCS_DEVICE_ID, gloDeviceID);
+        setCookie('dvid', gloDeviceID, 30);		//사용처 확인 후 CM_LCS_DEVICE_ID 값으로 수정
+        localStorage.setItem('dvid', gloDeviceID);		//사용처 확인 후 CM_LCS_DEVICE_ID 값으로 수정
+    }
+
+    //App Check
+    if ((/device=app/ig).test(navigator.userAgent)) {
+        gloChkApp = 'iPhone';
+    } else if ((/NINTH/ig).test(navigator.userAgent)) {
+        gloChkApp = 'Android';
+    } else {
+        gloChkApp = 'MobileWeb';
+    }
+
+	//2019-11-12 khs : 아이폰 앱체크 안되는 버그 수정
+    if (gloChkApp == 'MobileWeb' && localStorage.getItem(CM_LCS_DEVICE_ID) != null && (/iphone|ipad|ipod/ig).test(navigator.userAgent)) {
+        gloChkApp = 'iPhone';
+    }
+
+	//2020-06-05 khs : 앱체크 방식 변경
+    if (gloChkApp == 'MobileWeb' && (localStorage.getItem(CM_LCS_DEVICE_ID) == null || localStorage.getItem(CM_LCS_DEVICE_ID) == "")) {
+        if (typeof webkit == "object") {
+            if (typeof webkit.messageHandlers == "object") {
+                if (typeof webkit.messageHandlers.ios == "object") {
+                    callWebAction("ACT1013", {}, "fn_chk_App");
+                }
+            }
+        }
+    }
+    function fn_chk_App(obj) {
+        // 아이폰 호환용
+        if (typeof obj == "string") obj = JSON.parse(obj);
+        if (obj["deviceId"] != "") {
+            gloDeviceID = obj["deviceId"];
+            setCookie(CM_LCS_DEVICE_ID, gloDeviceID, 30);
+            localStorage.setItem(CM_LCS_DEVICE_ID, gloDeviceID);
+            setCookie('dvid', gloDeviceID, 30);
+            localStorage.setItem('dvid', gloDeviceID);
+            if (gloChkApp == 'MobileWeb' && localStorage.getItem(CM_LCS_DEVICE_ID) != null && (/iphone|ipad/ig).test(navigator.userAgent)) {
+                gloChkApp = 'iPhone';
+            }
+        }
+    }
+    //]]>
+</script>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    //아래 함수들은 모두 common.js (사용자정의함수 라이브러리) 소스로 이동해야함.
+
+    //안드로이드에서 a태그의 tel 속성을 사용할 수 없어서 네이티브로 다이얼 호출
+    function fnTel(telnum) {
+        if (gloChkApp == 'Android') {
+            callWebAction("ACT1022", [{ "tel": telnum }], "");
+        } else {
+            location.href = 'tel:' + telnum;
+        }
+    }
+
+    //]]>
+</script>
+
+
+<script>
+	if (this.name=="subwebview" || this.name=="msubwindow"){
+		window.history.go=function(n){
+			if (n==-1){
+				if (history.state==null){
+					if (gloChkApp.toLowerCase()=="iphone" || gloChkApp.toLowerCase()=="android"){
+						callWebAction("ACT1016", {callScript:"alert", callObj:{}}, "alert");
+						return false;
+					}else{
+						var thisWindow = window
+						thisWindow.close();
+
+					}
+				}
+			}
+			if (typeof hiddenZone=="undefined"){
+				var ifrm = document.createElement("iframe");
+				ifrm.style="display:none";
+				ifrm.name="hiddenZone";
+				document.body.appendChild(ifrm);
+			}
+			hiddenZone.window.history.go(n);
+		}
+		window.history.back=function(){
+			window.history.go(-1);
+		}
+		$(document).on("click", "a", function(){
+			var gopageurl=$(this).attr("href")
+			if (gopageurl=="/" || gopageurl=="/m" || gopageurl=="/m/" || gopageurl=="/main/main_real.asp" || gopageurl=="/m/main/main.asp"){		//2021-02-08 khs : 모바일 홈버튼 누르면 팝업 닫기
+				if (gloChkApp.toLowerCase()=="iphone" || gloChkApp.toLowerCase()=="android"){
+					logger(gopageurl)
+					if (gopageurl=="/m"){	// 2021-06-08 kyh 홈으로 이동시에 상세페이지 닫히고 홈으로 이동 백진아부장님 (2021.05.30 사장님 확인사항)
+						opener.location.href='/m';
+					}
+					callWebAction("ACT1016", {callScript:"alert", callObj:{}}, "alert");
+					return false;
+				}else{
+					if (gopageurl=="/m"){	// 2021-06-08 kyh 홈으로 이동시에 상세페이지 닫히고 홈으로 이동 백진아부장님 (2021.05.30 사장님 확인사항)
+						opener.location.href='/m';
+					}
+					var thisWindow = window
+					thisWindow.close();
+
+				}
+			}
+		})
+	}
+//}	else{
+	//2019-07-02 khs : 앱 메인 웹뷰에서 새창 으로 링크 열기 ->2020-08-03 khs : 웹뷰 새창 열때 a태그 _nchor-New-Pop 클래스명 있으면 새창으로 열리게 주섲ㅇ
+	if (gloChkApp.toLowerCase()=="iphone" || gloChkApp.toLowerCase()=="android" || gloChkApp.toLowerCase() == 'mobileweb'){	//2020-05-26 khs : 모바일 웹에서 새창으로 열리도록 수정
+		$(document).on("click", "a", function(){
+			var url = $(this).attr("href");
+			if (typeof (url) !== 'undefined') {				
+				if (
+					url.indexOf("/story/story_detail")==-1
+					&& url.indexOf("content.asp")==-1
+					&& url.indexOf("tvDetail.asp")==-1
+					&& url.indexOf("tvLive_izec.asp")==-1
+					&& url.indexOf("customer_promotion_detail")==-1
+					&& url.indexOf("www.instagram.com")==-1
+					&& !$(this).hasClass("_nchor-New-Pop")
+				) return true;
+
+                //2020-07-29 khs : 인스타그램 링크
+                if (url.indexOf("www.instagram.com") > -1) {
+                    if (gloChkApp.toLowerCase() == "iphone") {
+                        //location.href="instagram://user?username="+ url.replace(/https\:\/\/www.instagram.com\/(\w+)\//, "$1")
+                        //callWebAction('ACT1015', {'url':url}, null);
+                        location.href = url;
+                    } else if (gloChkApp.toLowerCase() == "android") {
+                        location.href = "intent:" + url.replace(/(http|https)\:/, '') + "#Intent;package=com.instagram.android;scheme=https;end"
+                    } else {
+                        window.open(url, "_insta", "");
+                    }
+                    return false;
+                }
+
+                //191129|wjy 상세페이지에서 문자등은 웹뷰로 띄우면 안되기에 조건을 넣음..
+                if (url.substr(0, 4) == "http" || url.substr(0, 1) == "/") {
+                    if (gloChkApp.toLowerCase() == 'mobileweb') {	//2020-05-26 khs : 모바일 웹에서 새창으로 열리도록 수정
+                        $(this).attr("target", "msubwindow");
+                        return true
+                    } else {
+                        return chk_link(url);
+                    }
+                }
+            }			
+		})
+		function chk_link(url){
+			if (url.indexOf(location.host)==-1){
+				if (url==""){
+					url = document.URL;
+				}else{
+					url = location.protocol +"//"+ location.host +(url.substr(0, 1)=="/"?"":"/")+ url;
+				}
+			}
+			if (url.indexOf("?")>-1){
+				if (url.indexOf("#")>-1){
+					url = url.replace("#", "&wtype=sub#")
+				}else{
+					url += "&wtype=sub"
+				}
+			}else{
+				if (url.indexOf("#")>-1){
+					url = url.replace("#", "?wtype=sub#")
+				}else{
+					url += "?wtype=sub"
+				}
+			}
+
+			//2019-11-18 khs : 아이폰 새창 오류 수정
+			url = url.replace(/params.*\&/, '');
+			callWebAction('ACT1015', {'url':url}, null);
+			return false;
+		}
+	}
+//}
+
+//2020-12-01 khs : 로그인, 장바구니, 적립금 글로벌 변수 - S
+	var cfgIsLogin = "login";
+	var cfgCartCnt = "0";
+	var cfgDealerState = "F";
+    var cfgUserInfo = "0||0";
+	var cfgTodayHistoryCnt = "||0";
+    
+//2020-12-01 khs : 로그인, 장바구니, 적립금 글로벌 변수 - E
+	var ajaxDomain = location.protocol + "//www.sellovely.com";
+</script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styledefault/font.css">
+    <link rel="stylesheet" type="text/css" href="/css/styledefault/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/styledefault/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/styledefault/style1/style.css">
+    <script language="javascript" src="/jscript/styledefault/common.js?2021093012"></script>
+    <script language="javascript" src="/jscript/styledefault/style1/style_common.js"></script>
+
+    <script language="javascript" src="/OAuth/oauth2.js"></script>
+
+    <iframe name="hiddenZone" src="/dummy.asp" width="0" height="0" style="display:none"></iframe>
+    <div align="center" class="wrap_body">
+        
+
+
+
+<div class="m-inner minishop">
+    <div class="minishopAdverWrap" style="background-image:url('/Content/Upload/MiniShop/mangogage/O1CN01bd7k3E2AXbOFkrG1l_!!2384008213.jpg')">
+        <!--<div class="topWrap">
+            <dl>
+                <dd><span class="icoBack"><span class="iconfont ftic-back" onclick="history.back();"></span></span></dd>
+                <dd><span class="catWrap"><a href="/m/product/cart.asp"><img src="/data/<%=SITEID%>/icon/topmenu_cate_1.png" alt="장바구니"><span class="cartCnt">0</span></span></a></dd>
+            </dl>
+        </div>-->
+        <div class="adverInner"></div>
+        <div class="areaUnder">
+            <div class="imgTop">
+                <div class="imgAr">
+                    <!-- 프로필 클릭이벤트 -->
+                    <div class="iv">
+                        <a class="imgTac" href="/data/sellovely/photo/main-inquiry.jpg" style="background-image:url('/data/sellovely/photo/main-inquiry.jpg')">
+                        <a class="imgTac" href="/data/sellovely/photo/main-inquiry.jpg" style="background-image:url('/data/sellovely/photo/main-inquiry.jpg')">
+                        <a class="imgTac" href="/data/sellovely/photo/main-inquiry.jpg" style="background-image:url('/data/sellovely/photo/main-inquiry.jpg')">
+                        </a>
+                        <!-- <a href="javascript:void(0)" class="imgTac" style="background-image:url('/data/sellovely/photo/main-inquiry.jpg')"></a> -->
+                    </div>
+                    <h2>망고가게</h2>
+                    <div class="textAr">
+                        <div class="text">
+                            <div class="textIn">mangogage</div>
+                                <p class="textMore hide"><a href="javascript:void(0)">+ 더보기</a></p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="btn-edit-area">
+                        <a href="/store/MyProfile" class="btn btn-edit">프로필 편집</a>
+                    </div>
+            </div>
+
+            <div class="btnArea">
+                <ul>
+                                                            <li>
+                        <a href="javascript:;" onclick="dealerLike();" class="like_back"><img src="/assets/img/store/icon_like.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="_SNSLayerIcon"><img src="/assets/img/store/icon_share.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabArea">
+                <ul>
+                    <li class="on"><a href="javascript:void(0)">러블리링크</a></li>
+                    <li><a href="javascript:void(0)">스토어</a></li>
+                </ul>
+            </div>
+            <!--<div class="tabArea">
+                <ul>
+                    <li class="on"><a href="javascript:void(0)">ALL</a></li>
+                    <li><a href="javascript:void(0)">러블리링크</a></li>
+                    <li><a href="javascript:void(0)">PRODUCT</a></li>
+                    <li><a href="javascript:void(0)">STORY</a></li>
+                    <li><a href="javascript:void(0)">TV</a></li>
+                </ul>
+            </div>-->
+        </div>
+    </div>
+    <div id="minishop"></div>
+    <!--러블리링크-->
+    <div class="areaLovelyLink">
+        <input type="hidden" id="SuperTagID" value="<%=uid%>" />
+        <section>
+            <div>
+                <section class="sec-link-box">
+                    <div id="link_box">
+
+                    </div>
+                </section>
+                <!-- //링크추가하기 -->
+                    <div class="btn_linkplus">
+                        <div>
+                            <a href="/Store/AddLovelyLink"><img src="/assets/img/btn_plus.png" /> 링크추가하기</a>
+                        </div>
+                    </div>
+                    <div class="btn-center">
+                        <a href="javascript:void(0)" class="btn btn-s1" onclick="fn_AllChk()">전체선택</a>
+                        <a href="javascript:void(0)" class="btn btn-s2" onclick="fn_RemoveLink()">삭제하기 (<span id="chk_len">0</span>개)</a>
+                    </div>
+            </div>
+
+            <div class="popupbox linkadmin">
+                <div class="popupbox_linkadmin">
+                    <form id="LinkForm" method="post" enctype="multipart/form-data">
+                        <a href="javascript:void(0)" class="btn_close02">닫기</a>
+                        <p class="link_top">링크 관리</p>
+                        <div class="camera_area">
+                            <div class="box_thumnail"><img src="" alt="이미지" onerror="this.src='/assets/img/onerror.jpg'"></div>
+                            <div class="picture_input">사진첨부<input type="file" class="btn_camera" accept="image/*" name="LinkImage" id="LinkImage"></div>
+                        </div>
+                        <input type="text" class="title_input" placeholder="제목입력" name="LinkTitle" id="LinkTitle">
+                        <input type="text" class="url_input" placeholder="URL 입력" name="LinkUri" id="LinkUri">
+                        <ul class="tex_center">
+                            <li class="yes" onclick="fn_RegLink();"><a href="javascript:void(0)">저장</a></li>
+                            <li class="no"><a href="javascript:void(0)">닫기</a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <!-- //링크수정하기 레이어 팝업 -->
+        </section><!-- //링크영역들 -->
+    </div>
+</div>
+<section class="top-wrap">
+    <img src="/assets/img/logo_bg.jpg" alt="logo_bg" class="logo_bg" />
+    <div class="top-logo-wrap">
+        <img src="/assets/img/logo_top_m.png" alt="sellovely" class="top-logo" />
+    </div>
+</section>
+<div class="shareLayer">
+    <div class="shareLayerCloseWrap">
+        <a href="javascript:;" class="shareLayerClose">이 창을 닫기</a>
+    </div>
+    <div class="shareLayerWrap">
+        <div class="shareLayerCon">
+            <h3 class="shareLayerTit">공유하기</h3>
+            <ul>
+                <li class="shareLayer-item"><a id="btnFacebook" href="#" class="shareLayer-item-anchor" data-icon="facebook" onClick="openScrapSnsUnni('mangogage', 'CM_SNS_FACEBOOK','STORE')">페이스북에 공유</a></li>
+                <li class="shareLayer-item"><a id="btnTwitter" href="#" class="shareLayer-item-anchor" data-icon="twitter" onClick="openScrapSnsUnni('mangogage', 'CM_SNS_TWITTER','STORE')">트위터에 공유</a></li>
+                <li class="shareLayer-item hide"><a id="btnGoogle" href="#" class="shareLayer-item-anchor" data-icon="google" onClick="openScrapSnsUnni('mangogage', 'CM_SNS_GOOGLE','STORE')">구글에 공유</a></li><!-- 2020-01-21 jwj 구글공유 기능 삭제로 인해 숨김 -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        // 사용할 앱의 Javascript 키를 설정해 주세요.
+                        //Kakao.init('17589d9122423438806a17409f64002d');
+                        //	Kakao.init('<%=CS_KakaoCode%>');
+                        // 2019-10-15 kyh, 카카오 앱키(script)
+                        Kakao.init('95db54b201d26cb5b602a336a8040862');
+
+                        // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+                        Kakao.Link.createDefaultButton({
+                            container: '#btnKakao',
+                            objectType: 'feed',
+                            content: {
+                                title: '망고가게',
+                                imageUrl: 'https://sellovely.com/data/sellovely/photo/main-inquiry.jpg',
+                                link: {
+                                    webUrl: 'https://www.sellovely.com/mangogage',
+                                    mobileWebUrl: 'https://www.sellovely.com/mangogage',
+                                }
+                            }
+                        });
+                    });
+
+                    function plusFriendChat(plusid) {
+                        //	Kakao.PlusFriend.chat({
+                        //		plusFriendId: plusid // 플러스친구 홈 URL에 명시된 id로 설정합니다.
+                        //	});
+                        // 2019-10-15 kyh, 카카오채팅 api 변경됨
+                        Kakao.Channel.chat({
+                            channelPublicId: plusid // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
+                        });
+                    }
+                </script>
+                <li class="shareLayer-item"><a id="btnKakao" href="#" class="shareLayer-item-anchor" data-icon="kakaotalk">카카오톡으로 공유</a></li>
+            </ul>
+        </div>
+        <div class="shareLayerCon">
+            <h3 class="shareLayerTit">링크복사</h3>
+            <div class="shareLayer-copy-link">
+                <input type="text" class="shareLayer-copy-link-url" id="copy_link_url" value="" readonly="readonly" contenteditable="false"> <!-- 20181219 하단 P 태그 대체 -->
+                <!-- <p class="shareLayer-copy-link-url" ></p> // 20181219 상단 input으로 대체 -->
+                <div class="shareLayer-copy-link-button-wrapper">
+                    <a onclick="javascript: iosCopyToClipboard(document.getElementById('copy_link_url'));" data-role="iosLinkCopy" class="shareLayer-copy-link-button" style="display: none;"></a>
+                    <a href="javascript:alert('복사되었습니다.');" class="shareLayer-copy-link-button clipboard" data-clipboard-text="" data-role="androidLinkCopy"></a>
+                </div>
+            </div>
+        </div>
+        <div class="shareLayerCon">
+            <p>위 링크를 복사하셔서 sns프로필에 등록하세요</p>
+        </div>
+    </div>
+</div>
+<!-- SNS 공유 신끝 ///-->
+
+
+    </div>
+
+    <script type="text/javascript">
+    if (window.$dealerChk == undefined) {
+        window.$dealerChk = "F"
+    }
+</script>
+
+<!-- 좌측슬라이드 시작 -->
+
+<div id="layer_pop_cls"></div>
+
+<div class="all_menu_box ">
+    <!-- div open 1 -->
+    <div class="all_menu">
+        <div class="all_menu_cont">
+
+            <!-- Swiper -->
+            <div class="sc_wrap">
+                <!-- div open 4 -->
+                <div class="sw_wrap">
+
+                    <div class="ss_wrap">
+                        <!-- div open 6 -->
+                        <div class="member_info_wrap sitebg1">
+                            <!-- div open 7 -->
+                            <div class="inner">
+                                <div class="info1">
+                                    <!-- div open 9 -->
+                                        <div class="lgt tmb_login">
+                                            <a href="/m/my/main.asp"><img src="/data/sellovely/photo/main-inquiry.jpg"</a>
+                                        </div>
+                                        <div class="mid tmb_login">
+                                            <!-- <a href="/addon/my/profile.asp"><span class="id" >Hi, 망고가게님</span></a> -->
+                                            <span class="id">Hi, 망고가게님</span>
+                                            <p>
+                                                <a href="/m/mobile_logout.asp" class="btn">로그아웃</a> 
+                                                
+                                            </p>
+                                        </div>
+                                </div>
+                                <ul class="menu_info">
+                                    <li><a href="/m/my/main.asp"><span class="txt">마이페이지</span></a></li>
+                                    <li><a href="/m/my/order_total.asp?mode=normal" onclick="alert('준비중 입니다.'); return false;"><span class="txt">주문/배송조회</span></a></li>
+                                    <li><a href="/m/product/cart.asp" onclick="alert('준비중 입니다.'); return false;"><span class="txt">장바구니</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                            <div class="sellSector a3">
+                                <div class="split"></div>
+                                <div class="pdWrap ">
+                                    <dl class="">
+                                        <dt>
+                                            <div class="top">
+                                                <div class="tit">망고가게</div>
+                                            </div>
+                                            <div class="mid">
+                                                <a href="/addon/celeb/main.asp" onclick="alert('준비중 입니다.'); return false;" style="border:1px solid #FA2050" class="btn sellerbtn sitecolor1">셀럽<span id="yesSeller" class="sitecolor1"> 코너</span></a>
+                                            </div>
+                                        </dt>
+                                        <dd>
+                                            <a href="/mangogage"><span class="miniBtn sitebg2">미니샵</span></a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        <div class="split"></div>
+
+                        <div class="pdWrap">
+                            <div class="top">
+                                <div class="tit">최근 본 상품 <span>(<span class="recent-cnt">0</span>개)</span></div>
+                                <div class="rgt">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper recent_bg">
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="split"></div>
+
+                        <ul class="gnb2">
+                            <!--<li class="category _sp1 st1">
+                                <div class="tit">LIVE CATEGORY</div>
+                                <ul>-->
+                                    <!-- 카테고리 로드 참조 /jscript/categoryMenu.js -->
+                                    <!--{{CATELIST_WLIVE_NEW}}-->
+
+                                    <!-- <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" onclick="location.href='/m/goods/best100.asp?menuType=new'">
+                                           <img data-depth1img="" border="0" src="/data/sellovely/leftmenu/mico_new.png" style="width:41px;">
+                                            <span data-depth1title=""> 신상품</span>
+                                        </a>
+                                    </li> -->
+                                <!--</ul>
+                            </li>
+
+                            <div class="split"></div>-->
+                            <li class="category _sp2 st2">
+                                <div class="tit">SHOPPING CATEGORY</div>
+                                <ul id="ShoppingCategoryList"></ul>
+                            </li>
+
+                            <li class="split"></li>
+                            <li class="category st2">
+                                <div class="tit">MY LIKE</div>
+                                <ul>
+                                    <!-- 카테고리 로드 참조 /jscript/categoryMenu.js -->
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/m/my/favorite.asp" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 찜한 상품</span>
+                                        </a>
+                                    </li>
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/addon/my/my_likeStory.asp" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 나의 좋아요</span>
+                                        </a>
+                                    </li>
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/addon/my/my_dealer.asp" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 찜한 </span>
+                                        </a>
+                                    </li>
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/addon/my/my_following.asp" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 팔로잉 셀럽</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="split"></li>
+                            <li class="category st2">
+                                <div class="tit">MY PAGE</div>
+                                <ul>
+                                    <!-- 카테고리 로드 참조 /jscript/categoryMenu.js -->
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/m/my/order_total.asp?mode=normal" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 주문내역</span>
+                                        </a>
+                                    </li>
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/m/my/order_total.asp?mode=cancel" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 교환/반품</span>
+                                        </a>
+                                    </li>
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" location.href="/m/my/my_coupon.asp" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 나의 쿠폰</span>
+                                        </a>
+                                    </li>
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/m/my/my_point.asp" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 포인트</span>
+                                        </a>
+                                    </li>
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/m/my/evaluate_list.asp" onclick="alert('준비중 입니다.'); return false;">
+                                            <span data-depth1title=""> 상품 리뷰</span>
+                                        </a>
+                                    </li>
+                                    <li data-menu="mLeftSlideCate list">
+                                        <a data-depth1link="" href="/m/my/my_qna.asp">
+                                            <span data-depth1title=""> 1:1문의</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hide split"></li>
+                            <li class="hide">
+                                <div class="tit" style="position:relative;"><a href="/" style="color:#000;">STORY</a></div>
+                                <ul>
+                                    <li><a href="/addon/m_user/goods/goods_reg.asp">상품등록</a></li>
+                                    <li><a href="/addon/my/my_likeStory.asp">좋아요</a></li>
+                                    <li><a href="/m/my/my_comment_list.asp">내 댓글</a></li>
+                                    <li><a href="/m/my/my_favorite_seller.asp">관심</a></li>
+                                    <!--<li> <a href="/addon/my/my_follow.asp">팔로우</a></li> -->
+                                </ul>
+                            </li>
+                            <li class="hide split"></li>
+                            <li class="hide">
+                                <div class="tit"><a href="/m/my/main.asp" style="color:#000;">MY PAGE</a></div>
+                                <ul>
+                                    <li><a href="/m/my/order_total.asp?mode=deliver">주문내역</a></li>
+                                    <li><a href="/m/my/order_total.asp?mode=cancel">교환/반품</a></li>
+                                    <li><a href="/m/my/my_point.asp">적립금</a></li>
+                                    <li><a href="/m/my/my_coupon.asp">할인쿠폰</a></li>
+                                    <li><a href="/m/my/favorite.asp">좋아요 상품</a></li>
+                                    <li><a href="/m/my/evaluate_list.asp">리뷰</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="hide split"></div>
+
+                        <ul class="gnb hide">
+                            <li>
+                                <div class="tit">SUPPORT & COMMUNITY</div>
+                                <ul>
+                                    <li><a href="/m/customercenter/cscenter_notice.asp">공지사항</a></li>
+                                    <li><a href="/m/my/my_qna.asp">Q&A</a></li>
+                                    <li><a href="/m/my/product_q_a.asp">상품Q&A</a></li>
+                                    <li><a href="/m/customercenter/cscenter_one.asp?mode=A">1:1 문의</a></li>
+                                    <li><a href="/m/customercenter/cscenter_FAQ.asp">FAQ</a></li>
+                                    <li><a href="/m/customercenter/cscenter_main.asp">고객센터</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="split"></div>
+                        
+
+                        <div class="copyright">
+                            <div class="copyData">
+                                <a href="/m/customercenter/guide.asp?code=licensing">이용약관</a>
+                                <a href="/m/customercenter/guide.asp?code=privacy">개인정보취급방침</a>
+                                <a href="/m/customercenter/cscenter_main.asp" onclick="alert('준비중 입니다.'); return false;">고객센터</a>
+                            </div>
+
+                            <address>
+                                상호 : 주식회사 웰유아이엔씨　|　대표 : 김윤성<a href="/api/test/tmp_21.asp">.</a>      <br>
+                                사업자등록번호 : 588-88-01598<br>
+                                주소 : 서울 구로구 디지털로 306 1111호<br>
+                                통신판매업신고번호 : 2020-서울강남-03466<br>
+                                개인정보보호책임자 : 김산 sellovely@wellu.co.kr<br>
+                                <br>
+                                © Sellovely CO., LTD. All rights reserved.
+                            </address>
+                        </div>
+
+                        <div class="nice hide">
+                            <p class="nice-img"><img src="/data/sellovely/icon/allmenu_ico_7.png" alt=""></p>
+                            <div class="nice-txt-w">
+                                <p class="nice-img-txt">NICE구매안전(에스크로)서비스</p>
+                                <p class="nice-txt">안전거래를 위해 나이스페이먼츠 구매안전(에스크로)에 가입하여 서비스를 제공하고 있습니다.</p>
+                                <p class="nice-txt"><a href="javascript:" class="openLayerFix nice-btn" idxLyr="1">서비스 가입사실 확인</a></p>
+                            </div>
+                        </div>
+
+                    </div>      <!-- div open 6 -->
+                </div>
+                <!-- Add Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+            </div>      <!-- div open 4 -->
+            <!-- Swiper End -->
+
+        </div>
+        <div class="close-all-menu"><img src="/data/sellovely/icon/allmenu_ico_2.png" alt=""></div>
+    </div>
+    <div class="all_menu_mask"></div>
+</div>      <!-- div open 1 -->
+
+<div class="layerFix escrow" idxLyr="1">
+    <div class="layerBg"></div>
+    <div class="layerConWrap">
+        <div class="btnClLyr"></div>
+        <iframe src="https://pg.nicepay.co.kr/issue/IssueEscrow.jsp?Mid={{PG_SHOP_ID_NICEPAY}}&CoNo={{BIZ_NO}}" id="escrowID" name="escrow"></iframe>
+    </div>
+</div>
+<script id="ShopingCategoryTemplate" type="text/x-jquery-tmpl">
+    <li data-menu="mLeftSlideCate list">
+        <a href="/m/goods/main.asp?cate=${CateCode}" data-depth1link="" onclick="alert('준비중 입니다.'); return false;">
+            <span data-depth1title="">${Name}</span>
+        </a>
+    </li>
+</script>
+<script>
+
+    function earlyPrize() {
+        var swiperleftmenu = new Swiper('.all_menu .pdWrap .swiper-container', {
+            autoHeight: true,
+            nextButton: '.all_menu .pdWrap .swiper-button-next',
+            prevButton: '.all_menu .pdWrap .swiper-button-prev',
+            slidesPerView: '4.5',
+        });
+    }
+
+    //가로세로 resize
+    $(window).resize(function () {
+        resetSwipe();
+    });
+
+    //좌측메뉴
+    function cateOpen() {
+        resetSwipe();
+        $(window).scrollTop(0);
+        function open() {
+            $(".all_menu_box").addClass("open")
+            $("body .mobileDomInner").css({ 'height': '100vh', 'overflow': 'hidden' });
+            $("body .mobileDomInner").bind('touchmove', function (e) { e.preventDefault() });
+            $("body .mobileDomInner .all_menu_box").bind("touchmove", function (e) { e.stopPropagation(); });
+            earlyPrize();
+        }
+        //$(".all_menu_box").show()
+        setTimeout(open, 0)
+    }
+
+    //swipe 리셋
+    function resetSwipe() {
+        /*$(".all_menu_cont").height($(window).height()-$(".all_menu_head").height());
+        swiper.updateSlidesSize()*/
+    }
+
+    function GetShoppingCategory() {
+        $.ajax({
+            url: "/Home/GetShoppingCategory",
+            type: "POST",
+            data: {},
+            dataType: "JSON",
+            success: function (data) {
+                $("#ShoppingCategoryList").empty();
+                if (data.length > 0) {
+                    $("#ShopingCategoryTemplate").tmpl(data).appendTo("#ShoppingCategoryList");
+                }
+            },
+            error: function (request, status, error) {
+                console.log("오류가 발생했습니다.");
+            }
+        });
+    }
+
+    $(function () {
+        //아이폰에서 새창을 띄울시 뒤로가기가 안되기 떄문에 닫기버튼이 나오도록..
+        $(document).on("click", ".all_tok_cls", function () {
+            page_link = $(this).attr("page_link")
+
+            $.ajax({
+                type: "post",
+                url: "/m/common/exec_M_LinkClose.asp",
+                data: { "page_link": page_link },
+                success: function (data) {
+                    $("#tok_link_id").html(data);
+                }
+            });
+        });
+
+        $(".join_pop_cls").click(function () {
+            $.ajax({
+                type: "post",
+                url: "/common/ajax/exec_NewMainTopMenu.asp",
+                data: { sel_type: "m", load_type: "template" },
+                success: function (data) {
+                    $("#layer_pop_cls").html(data);
+                }
+            });
+        });
+
+        $(".close-all-menu").click(function () {
+            function close() {
+                //$(".all_menu_box").hide()
+                //$("body").css({'height':'auto','overflow':'hiddden'});
+                $("body .mobileDomInner").css({ 'height': '100vh', 'overflow': 'scroll' });
+                $("body .mobileDomInner").unbind('touchmove');
+            }
+            $(".all_menu_box").removeClass("open");
+            setTimeout(close, 200)
+        });
+
+        //검색 슬라이드
+        $(".m_search").click(function () {
+            $(".search_section").toggleClass("on");
+        });
+
+        //메뉴 1뎁스클릭 펼침
+        $(".menu-list .depth1").click(function () {
+            if ($(this).hasClass("on")) {
+                $(this).removeClass("on");
+                $(this).next(".depth2").stop(true, true).slideUp(200, function () {
+                    resetSwipe();
+                });
+            }
+            else {
+                $(".menu-list .depth1").not($(this)).removeClass("on")
+                $(this).addClass("on")
+                $(".menu-list .depth2").not($(this).next(".depth2")).stop(true, true).slideUp(200);
+                $(this).next(".depth2").stop(true, true).slideDown(200, function () {
+                    resetSwipe();
+                });
+            }
+        });
+
+        //메뉴 2뎁스클릭 펼침
+        $(".menu-list .depth2 > li").click(function () {
+            if ($(this).hasClass("on")) {
+                $(this).removeClass("on");
+                //$(this).children(".depth3").stop(true,true).slideUp(200,function(){
+                //  resetSwipe();
+                //});
+            }
+            else {
+                $(".menu-list .depth2 > li").not($(this)).removeClass("on")
+                $(this).addClass("on")
+                //$(".menu-list .depth3").not($(this).next(".depth3")).stop(true,true).slideUp(200);
+                $(this).children(".depth3").stop(true, true).slideDown(200, function () {
+                    resetSwipe();
+                });
+            }
+        });
+
+        //메뉴 1뎁스링크 클릭
+        $(".menu-list .depth1 a.tit").click(function () {
+            window.location.href = this.href;
+            return false;//기타이벤트 방지
+        });
+
+        // 홀수면 하단 줄 긋기
+        var oddChk = $('.all_menu .category').each(function () {
+            var oddChk = $(this).find('li').length;
+            oddChk = oddChk % 2;
+            if (oddChk) {
+                $(this).find('ul').append('<li></li>');
+            }
+        });
+
+        //첨로딩시 높이지정
+        resetSwipe();
+
+        $('.search_pop').hide();
+
+        GetShoppingCategory();
+    });
+</script>
+
+
+
+<div class="bfmWrap" id="bottomFMenu">
+    <ul class="clfix">
+        <li><a href="/mangogage"><img src="/data/sellovely/icon/footer_ico_1.png" alt="홈"></a></li>
+        <li><a href="javascript:cateOpen();"><img src="/data/sellovely/icon/footer_ico_2.png" alt="카테고리"></a></li>
+        <!-- 판매자 로그인 안됐을때  -->
+        <li class="dealler_logout"><a href="/m/my/my_favorite_seller.asp"><img src="/images/mainfoot_bottom_3.png" alt="관심 판매자"></a></li>
+        <!--// 판매자 로그인 안됐을때  -->
+
+                <!-- 셀럽 로그인 -->
+                <li class="center dealler_login celebCls">
+                    <div class="special" name="true">
+                        <div class="circle"><div class="innderCircle"></div></div>
+                        <span class="innerIcon st1">
+                            <a href="/addon/celeb/main.asp" class="anchorCover" onclick="alert('준비중 입니다.'); return false;"></a>
+                            <p class="imgTac"><object data="/m/images/svg/foot_float_star-w.svg" alt="코너"></object></p>
+                            <p class="txtTac">코너</p>
+
+                        </span>
+                        <span class="innerIcon st2">
+                            <a href="/mangogage" class="anchorCover"></a>
+                            <p class="imgTac"><object data="/m/images/svg/foot_float_minishop.svg" alt="내미니샵"></object></p>
+                            <p class="txtTac">내미니샵</p>
+
+                        </span>
+
+                        <span class="innerIcon st3">
+                            <a href="/addon/my/my_story.asp" class="anchorCover" onclick="alert('준비중 입니다.'); return false;"></a>
+                            <p class="imgTac"><object data="/m/images/svg/foot_float_story.svg" alt="내스토리"></object></p>
+                            <p class="txtTac">내스토리</p>
+
+                        </span>
+                        <span class="innerIcon st4">
+                            <a href="/addon/my/my_live.asp" class="anchorCover" onclick="alert('준비중 입니다.'); return false;"></a>
+                            <p class="imgTac"><object data="/m/images/svg/foot_float_tv.svg" alt="내TV"></object></p>
+                            <p class="txtTac">내TV</p>
+
+                        </span>
+                        <span class="innerIcon st5">
+                            <a href="/addon/my/seller/my_order_list.asp" class="anchorCover"></a>
+                            <p class="imgTac"><object data="/m/images/svg/foot_float_money.svg" alt="내머니"></object></p>
+                            <p class="txtTac">내셀럽머니</p>
+
+                        </span>
+                    </div>
+                </li>
+                <!--// 셀럽 로그인 -->
+        <!-- <li><a href="/addon/my/my_likeStory.asp"><img src="/images/mainfoot_bottom_4.png" alt="좋아요"></a></li> -->
+        <li><a href="javascript:new_open_pop();"><img src="/data/sellovely/icon/footer_ico_4.png" alt="검색"></a></li>
+        <li><a href="/m/my/main.asp"><img src="/data/sellovely/icon/footer_ico_5.png" alt="마이페이지"></a></li>
+    </ul>
+</div>
+<div class="botFixMenu_bg"></div> <!-- 아이폰에서 아래쪽 공백 막기 -->
+<div class="botFix_bg hide"></div> <!-- 플로팅 메뉴 fixed 영역 하단에 잡아주기 -->
+
+<div class="copyrightBox hide">
+    <p class="FS_smallTxt FC_light">copyright(c) Sellovely all right reserved.</p>
+</div>
+
+<script>
+    $(function () {
+        if (typeof mainChecker != 'undefined' && mainChecker) {
+            $('.copyrightBox').removeClass('hide');
+        }
+    })
+</script>
+<script>
+    var _botFix_bg = $('.botFix_bg').height();
+    $('#mobile_wrap').attr({ 'style': 'min-height:calc(100vh - ' + _botFix_bg + 'px)' });
+
+    function startFoot() {
+        $('.dealler_logout').remove();
+        $('.dealler_login').show();
+    };
+
+    // 원 움직임 막기
+    function $flagControl() {
+        var $flagT = true;
+        $('.special').attr({ 'name': $flagT });
+    };
+
+    //아이폰일때 플로팅 버튼 띄우기
+    chkDivice();
+
+    $(window).scroll(function () {
+        var scl = $('html,body', document).scrollTop();
+        scrollFloat(scl);
+    });
+
+    function scrollFloat(scl) {
+        //스크롤 높이
+        var floatTop = scl;
+        //플로터 높이
+        var floatData = $('#bottomFMenu').attr('floatTop');
+
+        var maxHg = $(document).height();
+        var widHg = $(window).height();
+        // 문서 높이에서 디바이스 높이를 뺀 가장 아래로 내렸을때 좌표
+        var dumMaxHg = (maxHg - widHg) + 10;
+        if (!floatData) { floatData = 0 }
+        //console.log(top);
+        var floatWrap = $('#bottomFMenu');
+
+        var floatTopUp = floatTop + 10;
+        var floatTopDown = floatTop - 10;
+        //console.log('창높이 :' +widHg+'/'+'문서높이 :' +maxHg);
+
+        if (widHg >= maxHg) {
+            // 문서 높이가 디바이스보다 작을때
+            //console.log('1');
+            $('.botFix_bg').removeClass('hide');
+            $('.botFixMenu_bg').css({ 'margin-bottom:': '-43px' });
+            floatWrap.addClass('show');
+            if (widHg >= maxHg) {
+                //console.log('a');
+            } else if (floatTop <= 200) {
+                //console.log('b');
+            } else {
+                //console.log('c');
+            }
+            return false;
+        } else if (widHg < maxHg) {
+            // 문서 높이가 디바이스보다 클때
+            //console.log('2_0');
+            var tinyChk = $('.bfmWrap').hasClass('_floatTiny');
+            if (tinyChk) { return false; }
+
+            $('.botFix_bg').addClass('hide');
+            $('.botFixMenu_bg').css({ 'margin-bottom:': '-143px' });
+            if (floatTop >= maxHg) {
+                floatWrap.removeClass('show');
+                $('#bottomFMenu').attr({ 'floatTop': floatTop });
+                return false;
+            } else if (floatTop < dumMaxHg) {
+                if (floatTopUp < floatData) {
+                    //스크롤 내릴때
+                    floatWrap.addClass('show');
+                    $('#bottomFMenu').attr({ 'floatTop': floatTop });
+                } else if (floatTopDown > floatData) {
+                    //스크롤 올릴때
+                    floatWrap.removeClass('show');
+                    $('#bottomFMenu').attr({ 'floatTop': floatTop });
+                } else {
+                    //floatWrap.addClass('_floatTiny');
+                }
+            } else {
+                //스크롤 올릴때
+                //console.log('2-2-2');
+            }
+        }
+    }
+
+    function new_open_pop() {
+        $('body', document).css({ 'overflow': 'hidden', 'height': '98%' });
+        go_topFast();
+
+        $('.search_pop_new').fadeIn().css({ 'position': 'fixed', 'height': '100vh', 'overflow': 'auto' });
+        get_sword();
+    }
+
+    $(function () {
+        scrollFloat(0);
+
+        setTimeout(startFoot, 0);
+
+        $('.special').click(function () {
+            var $chk = $(this).hasClass('on');
+            var $flagData = $('.special').attr('name');
+            var $time = 500;
+
+            if ($chk) {
+                // 클 때
+                if ($flagData == 'true') {
+                    $(this).attr({ 'name': 'false' });
+                    $('.bfmWrap').animate({ 'bottom': '0' });
+                    $('.bfmWrap').removeClass('iponeOn');
+                    $(this).removeClass('on').addClass('off');
+                    setTimeout($flagControl, $time);
+                }
+            } else {
+                // 작을 때
+                if ($flagData == 'true') {
+                    $(this).attr({ 'name': 'false' });
+                    $('.bfmWrap').animate({ 'bottom': '-65px' });
+                    $('.bfmWrap').addClass('iponeOn');
+                    $(this).removeClass('off').addClass('on');
+                    setTimeout($flagControl, $time);
+                }
+            }
+        });
+    })
+
+</script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://local.sellovely.com/minishop/js/jquery.imageview.js"></script>
+    <script type="text/javascript" src="/jscript/swiper.min.js"></script>
+    <script type="text/javascript" src="/jscript/color/colorPicker.js"></script>
+    <script type="text/javascript" src="/sns/scrap.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script type="text/javascript" src="/jscript/kakao.link.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script type="text/javascript" src="http://local.sellovely.com/minishop/js/main.js"></script>
+    
+    <script type="text/javascript" src="/jscript/jquery.tmpl.min.js"></script>
+    
+   
+
+    <script id="ListTemplate" type="text/x-jquery-tmpl">
+        {{each(i, data) list}}
+        <div class="link_box" data-id="${LinkID}">            
+            <div class='link_infobox'>
+                <dl {{if ImageUri == "" }} class="no-img" {{/if}}>
+                    {{if edit == "True" }}
+                    <dd class="chk">
+                        <input type="checkbox" name=chk class="chk" id="chk_${LinkID}" data-id="${LinkID}" onchange="fn_GetChkLen();" />
+                        <label for="chk_${LinkID}"><span></span></label>
+                    </dd>
+                    <dd class="sort">
+                        <a href="${LinkUri}" target="_blank"><img src="/assets/img/store/slide.jpg" /></a>
+                    </dd>
+                    {{else}}
+                    <dd class="num">${i + 1}</dd>
+                    {{/if}}
+                    <a href="${LinkUri}" target="_blank"><dd class="img" style="background-image:url(${ImageUri})"></dd></a>
+                    <dd class="txt">
+                        <p><a href="${LinkUri}" target="_blank">${Title}</a></p>
+                        <p><a href="${LinkUri}" target="_blank">${SubTitle}</a></p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script>
+
+        var remove = 0;
+        var linkId = 0;
+        var max = 0;
+
+        // 20190509 kyh, 스토리 더보기
+        function getStoryPc() {
+            var storyPage = Number($('#storyPage').val());
+            storyPage += 1
+            $('#storyPage').val(storyPage);
+            $.ajax({
+                type: "POST",
+                async: false,
+                data: { "storyPage": storyPage },
+                url: "/common/ajax/exec_getStoryMain.asp",
+                success: function (data) {
+                    if (data != '0') {
+                        $('.mainVisStoryWrap .listTab>ul').append(data);
+                        $('#storyStatus').val(1);
+                        mainMasonry();
+                        videoScript();
+                    } else {
+                        $('#storyStatus').val(0);
+                    }
+                }
+            });
+        }
+
+        // 20190509 kyh, 비디오 관련 스크립트
+        function videoScript() {
+            $('video').on('play', function () {
+                $(".playbtn[data-vod=" + this.id + "]").html("stop").hide()
+
+                //재생시작후 5초간 재생시간 표시
+                var _this = $(this);
+
+                setTimeout(function () {
+                    playTime(_this);
+                }, 300)
+
+                var intvCnt = 5;
+                _this.data("tmpIntv", setInterval(function () {
+                    playTime(_this);
+
+                    if (intvCnt == 0 || _this[0].currentTime >= 5) {
+                        clearInterval(_this.data("tmpIntv"));
+                        _this.parent().parent().find(".playtime").addClass("hide");
+                    }
+                    intvCnt--;
+                }, 1000)
+                )
+
+                function playTime(_this) {
+                    var vod_duration = _this[0].duration - _this[0].currentTime;
+                    var vod_m = setFloor(vod_duration / 60, 0)
+                    var vod_s = setFloor(vod_duration % 60, 0)
+                    var str_vod_duration = prependZero(vod_m, 2) + ":" + prependZero(vod_s, 2)
+                    _this.parent().parent().find(".playtime").html(str_vod_duration)
+                    _this.parent().parent().find(".playtime").removeClass("hide");
+                }
+                //재생시작후 5초간 재생시간 표시
+            })
+
+            $('video').on('pause', function () {
+                var _this = $(this);
+                $(".playbtn[data-vod=" + this.id + "]").html("play_arrow").hide();
+                clearInterval(_this.data("tmpIntv"));
+            })
+
+            $('video').on('loadeddata', function () {
+                var _this = $(this);
+                if (_this.visible_new()) {
+                    _this[0].play();
+                } else {
+                    _this[0].pause();
+                }
+            })
+        }
+
+        function open_pop() {
+            $('.search_pop').addClass('fix');
+            $('.search_pop').fadeIn();
+
+            $("form").each(function (index) {
+                $(this).append("<input type='hidden' name='dealerID' value='sani107@naver.com'");
+            });
+
+            get_sword();
+        }
+
+        function close_pop() {
+            $('.search_pop').removeClass('fix');
+            $('.search_pop').fadeOut();
+        }
+
+        //swipe 리셋
+        function resetSwipe() {
+            /*$(".all_menu_cont").height($(window).height()-$(".all_menu_head").height());
+            swiper.updateSlidesSize()*/
+        }
+
+        function fnCall_Relation() {
+            var storyPage = Number($('#storyPage').val());
+            storyPage += 1;
+            $('#storyPage').val(storyPage);
+            $.ajax({
+                type: "POST",
+                async: false,
+                data: { "mode": "minishop_My", "storyPage": storyPage, "ismobile": "T", userid: $('#userid').val(), storyUid: $('#storyUid').val(), sg_guid_list: $('#sg_guid_list').val() },
+                url: "/live/ajaxLiveMain.asp",
+                success: function (data) {
+                    if (data != '0') {
+
+                        $('.storyDetailData').css("display", "block");	//190528|wjy 값이 있을 경우 영역을 보임
+                        $('.tv_listConWrap').append(data);
+                        $('#storyStatus').val(1);
+                    } else {
+                        $('.storyDetailData').css("display", "none");	//190528|wjy 값이 없을 경우 영역을 숨김
+                        $('#storyStatus').val(0);
+                    }
+                }
+            });
+        }
+
+        var cPage = 1;
+        function getCategoryGoods() {
+            var sortName = $('#sortName').val();
+            var sortCate = $('#sortCate').val();
+            var dealerID = 'sani107@naver.com';
+            $.ajax({
+                type: "post",
+                dataType: "text",
+                async: true,
+                cache: false,
+                url: "/m/minishop/exec_getCategoryGoods.asp",
+                data: { "sortName": sortName, "sortCate": sortCate, "dealerID": dealerID, "page": cPage },
+                success: function (data) {
+                    var arrData = data.split("||");
+
+                    if (arrData[1] == 'no') {
+                        $('.getCategoryListBottom').hide();
+                    }
+
+                    if (cPage == 1) {
+                        if (arrData[0] == 'nodata') {
+                            $('.getCategoryList').html('검색된 상품이 없습니다.').addClass('_center');
+                        } else {
+                            $('.getCategoryList').html(arrData[0]);
+                        }
+                    } else {
+                        $('.getCategoryList').append(arrData[0]);
+                    }
+                    cPage += 1;
+                }
+            });
+        }
+
+        var tvPage = 1;
+        function getTv() {
+            var dealerID = 'sani107@naver.com';
+            $.ajax({
+                type: "post",
+                dataType: "text",
+                async: true,
+                cache: false,
+                url: "/m/minishop/exec_getTv.asp",
+                data: { "dealerID": dealerID, "tvPage": tvPage },
+                success: function (data) {
+                    var arrData = data.split("||");
+
+                    if (arrData[1] == 'no') {
+                        $('.getTvListBottom').hide();
+                    }
+
+                    if (tvPage == 1) {
+                        if (arrData[0] == 'nodata') {
+                            $('.tv_area').html('<div style="text-align:center; width:100%;">검색된 컨탠츠가 없습니다.</div>');
+                        } else {
+                            $('.tv_area').html(arrData[0]);
+                        }
+                    } else {
+                        $('.tv_area').append(arrData[0]);
+                    }
+                    tvPage += 1;
+                }
+            });
+        }
+
+        function fnMinishopSns() {
+            var snsType = $('#snsType').val();
+            var snsUrl = $('#snsLink').val();
+            var dealerID = 'mangogage'
+            $.ajax({
+                type: "post",
+                dataType: "text",
+                url: "/m/minishop/exec_setSnsUrl.asp",
+                data: { snsType: snsType, snsUrl: snsUrl, dealerID: dealerID },
+                success: function (data) {
+                    alert('저장되었습니다.');
+                    //				$('.'+snsType).attr('href',snsUrl);
+                    //				$('.'+snsType+'_data').data('url',snsUrl);
+                    location.reload();
+                }
+            });
+        }
+
+
+
+        // 체인지 파일명 보류.
+        function changeFile(a) {
+            var fileValue = $("#choosefile").val().split("\\");
+            var fileName = fileValue[fileValue.length - 1]; // 파일명
+            $("#choosefile").append("value", fileName);
+            /*$("#choosefile").text(fileName);*/
+        }
+
+        function fn_Modify(e, p) {
+            p.SuperTagID = $('#SuperTagID').val();
+            $.ajax({
+                url: "/Home/",
+                type: "POST",
+                data: p,
+                dataType: "JSON",
+                success: function (data) {
+                    window.location.reload();
+                },
+                error: function (request, status, error) {
+                    alert("오류가 발생했습니다.");
+                }
+            });
+        }
+
+        //배경 프로필 이미지 수정
+        function fn_ImageModify(e, p) {
+            var formData = new FormData();
+            formData.append('SuperTagID', $('#SuperTagID').val());
+            formData.append('AddImg', $('#choosefile').data().files[0]);
+
+            $.ajax({
+                url: "/Home/",
+                type: "POST",
+                data: formData,
+                dataType: "JSON",
+                processData: false,
+                contentType: false,
+                success: function (data) {
+                    window.location.reload();
+
+                },
+                error: function (request, status, error) {
+                    alert("오류가 발생했습니다.");
+                }
+            });
+        }
+
+        //배경 이미지 수정
+        function fn_BackImageModify(e, p) {
+            var formData = new FormData();
+            formData.append('SuperTagID', $('#SuperTagID').val());
+            formData.append('AddBackgroundFile', $('#backgroundfile').data().files[0]);
+
+            $.ajax({
+                url: "/Home/",
+                type: "POST",
+                data: formData,
+                dataType: "JSON",
+                processData: false,
+                contentType: false,
+                success: function (data) {
+                    window.location.reload();
+
+                },
+                error: function (request, status, error) {
+                    alert("오류가 발생했습니다.");
+                }
+            });
+        }
+
+        function setColor(elementNm, color) {
+            $("#" + elementNm).val(color);
+            $("#" + elementNm).css("background-color", color);
+        }
+
+        function sendbandSns(url, txt) {
+            var content = encodeURIComponent(txt) + encodeURIComponent('\r\n') + encodeURIComponent(url);
+            var param = 'create/post?text=' + content
+            var a_store = 'itms-apps://itunes.apple.com/app/id542613198?mt=8'
+            var g_store = 'market://details?id=com.nhn.android.band'
+            var a_proto = 'bandapp://'
+            var g_proto = 'scheme=bandapp;package=com.nhn.android.band'
+
+            if (navigator.userAgent.match(/android/i)) {
+                // Android
+                setTimeout(function () { location.href = 'intent://' + param + '#Intent;' + g_proto + ';end' }, 100);
+            }
+            else if (navigator.userAgent.match(/(iphone)|(ipod)|(ipad)/i)) {
+                // Apple
+                setTimeout(function () { location.href = a_store; }, 200);
+                setTimeout(function () { location.href = a_proto + param }, 100);
+            }
+            else {
+                // alert('이 기능은 모바일에서만 사용할 수 있습니다.');
+                location.href = "http://www.band.us/plugin/share?body=" + content;
+            }
+        }
+
+        function iOSversion() {
+            if (/iP(hone|od|ad)/.test(navigator.platform)) {
+                // supports iOS 2.0 and later: <http://bit.ly/TJjs1V>
+                var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+                return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+            }
+        }
+        function iosCopyToClipboard(el) {
+            var oldContentEditable = el.contentEditable,
+                oldReadOnly = el.readOnly,
+                range = document.createRange();
+            var ver = iOSversion();
+
+            el.contentEditable = true;
+            el.readOnly = false;
+            range.selectNodeContents(el);
+
+            var s = window.getSelection();
+            s.removeAllRanges();
+            s.addRange(range);
+
+            el.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
+
+            el.contentEditable = oldContentEditable;
+            el.readOnly = oldReadOnly;
+
+            if (typeof ver == 'object') {
+                if (ver[0] >= 10) {
+                    document.execCommand('copy');
+                    alert('복사되었습니다.');
+                }
+            }
+        }
+
+        // 20190509 kyh, 스토리 정렬
+        function mainMasonry() {
+            $('.storyDom').masonry({
+                itemSelector: '.dataForm'
+            });
+            $('.storyDom').masonry('reloadItems');
+            $('.storyDom').masonry('layout');
+        }
+
+        function dealerLike() {
+            var link = location.href;
+            var textLike = Number($('.textLike').text());
+            logger(textLike)
+            $.ajax({
+                type: "POST",
+                dataType: "text",
+                async: false,
+                data: { "goodsDealerID": 'sani107@naver.com' },
+                url: "/common/ajax/exec_getDealerLikeChk.asp",
+                success: function (data) {
+                    if (data == "reg") {
+                        $('.like_back img').attr('src', '/m/images/minishop_heart.png')
+                        $('.textLike').text(textLike + 1)
+                    } else if (data == "del") {
+                        $('.like_back img').attr('src', '/m/images/minishop_heartB.png')
+                        $('.textLike').text(textLike - 1)
+                    } else if (data == "no") {
+                        alert("오류가 발생하였습니다.")
+                    } else if (data == "login") {
+                        location.href = '/m/mobile_login.asp?redirect=' + link;
+                    }
+                }
+            });
+        }
+
+
+        function fn_Init() {
+
+            $(".htBox.menu > .mnA").removeClass("_active");
+
+            var listSectorSwiper = new Swiper('.areaBestWrap .listSector.swiper-container', {
+                slidesPerView: 2.1,
+                spaceBetween: 10,
+            });
+
+            $('.setListDOM.pic3 span').click(function () {
+                var _type = $(this).attr('order-type');
+                console.log(_type);
+                $(this).attr({ 'class': '' });
+                _type = parseInt(_type) + 1;
+                if (_type >= '4') {
+                    _type = 1;
+                }
+                $(this).attr({ 'order-type': _type, 'class': 'st' + _type });
+                $(this).closest('.areaOrderWrap').find('.listSector').attr({ 'order-type': _type });
+            });
+
+            $('.setListDOM.pic2 span').click(function () {
+                var _type = $(this).attr('order-type');
+                console.log(_type);
+                $(this).attr({ 'class': '' });
+                _type = parseInt(_type) + 1;
+                if (_type >= '3') {
+                    _type = 1;
+                }
+                $(this).attr({ 'order-type': _type, 'class': 'st' + _type });
+                $(this).closest('.minishop_story_wrap , .areaTvWrap').find('.story_area').attr({ 'order-type': _type });
+                mainMasonry();
+            });
+
+            $('.setListDOM.pic1 span').click(function () {
+                var _type = $(this).attr('order-type');
+                console.log(_type);
+                $(this).attr({ 'class': '' });
+                _type = parseInt(_type) + 1;
+                if (_type >= '3') {
+                    _type = 1;
+                }
+                $(this).attr({ 'order-type': _type, 'class': 'st' + _type });
+                //$(this).closest('.areaTvWrap').find('.tv_area').attr({'order-type':_type});
+                $(this).closest('.areaTvWrap').find('.tv_area').removeClass().addClass('tv_area').addClass('st' + _type);
+            });
+
+            /*
+            $('.tabArea li a').click(function (e) {
+                e.preventDefault();
+                $('.tabArea li').removeClass('on');
+                $(this).closest('li').addClass('on');
+                var _idx = $(this).closest('li').index();
+
+                if (_idx == '0') {
+                    $('.areaBestWrap').show();
+                    $('.areaLovelyLink').hide();
+                    $('.areaOrderWrap').show();
+                    $('.minishop_story_wrap').show();
+                    $('.areaTvWrap').show();
+                } else if (_idx == '1') {
+                    $('.areaBestWrap').hide();
+                    $('.areaLovelyLink').show();
+                    $('.areaOrderWrap').hide();
+                    $('.minishop_story_wrap').hide();
+                    $('.areaTvWrap').hide();
+                    getLovelyLink();
+                }
+                else if (_idx == '2') {
+                    $('.areaBestWrap').show();
+                    $('.areaLovelyLink').hide();
+                    $('.areaOrderWrap').show();
+                    $('.minishop_story_wrap').hide();
+                    $('.areaTvWrap').hide();
+                } else if (_idx == '3') {
+                    $('.areaBestWrap').hide();
+                    $('.areaLovelyLink').hide();
+                    $('.areaOrderWrap').hide();
+                    $('.minishop_story_wrap').show();
+                    $('.areaTvWrap').hide();
+                    mainMasonry();
+                } else if (_idx == '4') {
+                    $('.areaBestWrap').hide();
+                    $('.areaLovelyLink').hide();
+                    $('.areaOrderWrap').hide();
+                    $('.minishop_story_wrap').hide();
+                    $('.areaTvWrap').show();
+                }
+            });
+            */
+
+            var btnAreaSwiper = new Swiper('.btnArea .swiper-contaniner', {
+                slidesPerView: 'auto',
+                //spaceBetween: 10,
+            })
+
+            $('.livePopupWrap._sns .txtSector .p_top a').click(function (e) {
+                e.preventDefault;
+                //$(this).closest('.p_top').toggleClass('_active');
+
+                // 2020-12-09 kyh
+                $('.livePopupWrap._sns .txtSector .p_top').removeClass('_active');
+                $(this).closest('.p_top').addClass('_active');
+
+                var url = $(this).data('url');
+                var sns = $(this).data('snstype');
+                $("#snsLink").val(url);
+                $("#snsType").val(sns);
+            });
+
+            $("._SNSLayerIcon").on('click', function () {
+                $(".shareLayer").addClass("on")
+            });
+
+            $(".shareLayerClose").on('click', function () {
+                $(".shareLayer").removeClass("on")
+            });
+
+            addWrap('.pricebox del', 'delDiv');
+
+            // 20190509 kyh, 스토리 좋아요
+            $(document).on('click', '.likeIcon._target', function () {
+                //$(this).toggleClass('on');
+                var storyUid = $(this).data("storyuid");
+                var _this = $(this);
+                var likeCnt = Number($(this).text());
+                var redirect = location.href;
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    data: { "goodsUid": storyUid },
+                    url: "/m/common/exec_instaGoods_Like.asp",
+                    success: function (data) {
+                        var res = $.parseJSON(data);
+                        if (res.returnCode == '200OKOK') {
+                            if (res.msg == 'like') {
+                                _this.addClass("on");
+                                _this.text(likeCnt + 1)
+                            } else {
+                                _this.removeClass("on");
+                                _this.text(likeCnt - 1)
+                            }
+                        } else if (res.returnCode == '402FAIL') {
+                            redirect = redirect.replace("&", "^");
+                            location.href = '/m/mobile_login.asp?redirect=' + redirect;
+                            return false;
+                        } else {
+                            alert("처리중 에러 발생\n다시 시도해 주세요");
+                            return false;
+                        }
+                    }
+                });
+            })
+
+            // 20190509 kyh, 스토리 좋아요
+            $(document).on('click', '.tv_likeIcon._target', function () {
+                //$(this).toggleClass('on');
+                var storyUid = $(this).data("storyuid");
+                var _this = $(this);
+                var likeCnt = Number($(this).text());
+                var redirect = location.href;
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    data: { "mode": "LIVE", "goodsUid": storyUid },
+                    url: "/m/common/exec_instaGoods_Like.asp",
+                    success: function (data) {
+                        var res = $.parseJSON(data);
+                        if (res.returnCode == '200OKOK') {
+                            if (res.msg == 'like') {
+                                _this.addClass("on");
+                                _this.text(likeCnt + 1)
+                            } else {
+                                _this.removeClass("on");
+                                _this.text(likeCnt - 1)
+                            }
+                        } else if (res.returnCode == '402FAIL') {
+                            redirect = redirect.replace("&", "^");
+                            location.href = '/m/mobile_login.asp?redirect=' + redirect;
+                            return false;
+                        } else {
+                            alert("처리중 에러 발생\n다시 시도해 주세요");
+                            return false;
+                        }
+                    }
+                });
+            })
+
+
+            // 20190509 kyh, 스토리 상품 더보기
+            $(document).on('click', '.moreClickEvent', function () {	// .moreClickEvent, /main/main_template.asp
+                var storyUid = $(this).data('storymore');
+                var _this = $(this);
+                $.ajax({
+                    type: "POST",
+                    async: false,
+                    data: { "storyUid": storyUid },
+                    url: "/common/ajax/exec_getStoryGoods.asp",
+                    success: function (data) {
+                        if (data != '') {
+                            _this.prev().append(data);
+                            _this.hide();
+                            mainMasonry();
+                            setTimeout(mainMasonry, 300);
+                        }
+                    }
+                });
+                //베스트 상품 정렬
+                setHeight('.minishop_best .li_posi');
+                //뉴 상품 정렬
+                setHeight('.minishop_new .li_posi');
+                //$mainVisStoryWrapMas.masonry();
+
+            });
+
+            // 20190509 kyh, 음소거 버튼
+            $(document).on('click', '.playerMute', function (e) {
+                e.preventDefault()
+                var _this = $(this).parent().find("video");
+                if (_this[0].muted) {
+                    _this[0].muted = false;
+                    $(this).html("volume_up")
+                } else {
+                    _this[0].muted = true;
+                    $(this).html("volume_off")
+                }
+            });
+
+            // extension: scrollEnd
+            $.fn.scrollEnd = function (callback, timeout) {
+                $(this).scroll(function () {
+                    var $this = $(this);
+                    if ($this.data('scrollTimeout')) {
+                        clearTimeout($this.data('scrollTimeout'));
+                    }
+                    $this.data('scrollTimeout', setTimeout(callback, timeout));
+                });
+            };
+
+            //visible_new 현재 화면에 보이는지 체크
+            $.fn.visible_new = function () {
+                var sTop = $(window).scrollTop();
+                var wHeight = $(window).innerHeight();
+                var sLeft = $(window).scrollLeft();
+                var wWidth = $(window).innerWidth();
+                var y1 = sTop;
+                var y2 = sTop + wHeight;
+                var x1 = sLeft;
+                var x2 = sLeft + wWidth;
+
+                var $this = $(this);
+                var thisTop = $this.offset().top;
+                var thisHeight = $this.height();
+                var thisLeft = $this.offset().left;
+                var thisWidth = $this.width();
+                var this_y1 = thisTop;
+                var this_y2 = thisTop + thisHeight;
+                var this_x1 = thisLeft;
+                var this_x2 = thisLeft + thisWidth;
+
+                if ((y1 > this_y2 || this_y1 > y2 || x1 > this_x2 || this_x1 > x2)) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            //현재 보이는 비디오만 재생 - 플러그인 위치 /jscript/jquery.visible.js -> 변경 visible_new
+            $(window).scrollEnd(function () {
+                $("video").each(function () {
+                    if ($(this).visible_new()) {
+                        $(this)[0].play();
+                    } else {
+                        $(this)[0].pause();
+                    }
+                })
+            }, 100);
+
+            videoScript();
+
+            $(document).scroll(function () {
+                mainMasonry();
+            });
+
+            //좌측메뉴
+            $(".btn-all-menu").click(function () {
+                //        resetSwipe();
+                function open() {
+                    $(".all_menu_box").addClass("open")
+                }
+                $(".all_menu_box").show()
+                //$("body").css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
+                setTimeout(open, 0)
+            });
+            $(".close-all-menu").click(function () {
+                function close() {
+                    $(".all_menu_box").hide()
+                }
+                $(".all_menu_box").removeClass("open")
+                //$("body").css({overflow:'auto'}).unbind('touchmove');
+                setTimeout(close, 200)
+            });
+
+
+
+            //검색 슬라이드
+            $(".m_search").click(function () {
+                $(".search_section").toggleClass("on");
+            });
+
+            //메뉴 1뎁스클릭 펼침
+            $(".menu-list .depth1").click(function () {
+                if ($(this).hasClass("on")) {
+                    $(this).removeClass("on");
+                    $(this).next(".depth2").stop(true, true).slideUp(200, function () {
+                        resetSwipe();
+                    });
+                }
+                else {
+                    $(".menu-list .depth1").not($(this)).removeClass("on")
+                    $(this).addClass("on")
+                    $(".menu-list .depth2").not($(this).next(".depth2")).stop(true, true).slideUp(200);
+                    $(this).next(".depth2").stop(true, true).slideDown(200, function () {
+                        resetSwipe();
+                    });
+                }
+            });
+
+            //메뉴 2뎁스클릭 펼침
+            $(".menu-list .depth2 > li").click(function () {
+                if ($(this).hasClass("on")) {
+                    $(this).removeClass("on");
+                    //$(this).children(".depth3").stop(true,true).slideUp(200,function(){
+                    //	resetSwipe();
+                    //});
+                }
+                else {
+                    $(".menu-list .depth2 > li").not($(this)).removeClass("on")
+                    $(this).addClass("on")
+                    //$(".menu-list .depth3").not($(this).next(".depth3")).stop(true,true).slideUp(200);
+                    $(this).children(".depth3").stop(true, true).slideDown(200, function () {
+                        resetSwipe();
+                    });
+                }
+            });
+
+            $('.search_pop').hide();
+
+            //메뉴 1뎁스링크 클릭
+            $(".menu-list .depth1 a.tit").click(function () {
+                window.location.href = this.href;
+                return false;//기타이벤트 방지
+            });
+
+            $(".join_pop_cls").click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "/common/ajax/exec_NewMainTopMenu.asp",
+                    data: "sel_type=m",
+                    success: function (data) {
+                        $("#layer_pop_cls").html(data);
+                    }
+                });
+            });
+
+            //아이폰에서 새창을 띄울시 뒤로가기가 안되기 떄문에 닫기버튼이 나오도록..
+            $(document).on("click", ".all_tok_cls", function () {
+                page_link = $(this).attr("page_link")
+
+                $.ajax({
+                    type: "post",
+                    url: "/m/common/exec_M_LinkClose.asp",
+                    data: { "page_link": page_link },
+                    success: function (data) {
+                        $("#tok_link_id").html(data);
+                    }
+                });
+            });
+
+            $(document).on("click", "input[name=_sectorID]", function () {
+                var id = $(this).attr("id");
+                if (id == "_sectorID-1") {
+                    $("#newAreaClass").removeClass("hide")
+                    $("#bestAreaClass").addClass("hide")
+                } else {
+                    $("#bestAreaClass").removeClass("hide")
+                    $("#newAreaClass").addClass("hide")
+                }
+            })
+
+            $('#sortName').on('change', function () {
+                cPage = 1;
+                getCategoryGoods();
+                $('.getCategoryListBottom').show();
+            });
+            $('#sortCate').on('change', function () {
+                cPage = 1;
+                getCategoryGoods();
+                $('.getCategoryListBottom').show();
+            });
+
+            //getCategoryGoods();
+            //getTv();
+        };
+
+        function getLovelyLink() {
+
+            var formData = new FormData();
+            formData.append('UserID', "sani107@naver.com");
+
+            var data = [{"LinkID":2,"SuperTagID":0,"Title":"퓨어 핏 시카 세럼 30ml","LinkUri":"https://www.sellovely.com/mangogage","ImageUri":"/Content/Upload/MiniShop/mangogage/20210914_133134.png","RegDate":"\/Date(1631847472880)\/","ModifyDate":"\/Date(1631847472880)\/","Sort":1,"UserID":"sani107@naver.com","SubTitle":"코스알엑스(COSRX)"},{"LinkID":3,"SuperTagID":0,"Title":"링크 이름","LinkUri":"http://www.sellovely.com/m","ImageUri":"/Content/Upload/MiniShop/mangogage/1BDDA4E6-8C23-48E2-A460-0D454CA15249.jpeg","RegDate":"\/Date(1631959908127)\/","ModifyDate":"\/Date(1631959908127)\/","Sort":2,"UserID":"sani107@naver.com","SubTitle":"링크 브랜드"}];
+
+            $("#link_box").empty();
+            if (data.length > 0) {
+                $("#ListTemplate").tmpl({ list: data, edit: 'True' }).appendTo("#link_box");
+            }
+        };
+
+        function fn_RemoveLink() {
+            var clen = $('input:checkbox[name=chk]:checked').length;
+            if (clen == 0) {
+                alert('삭제할 링크를 선택해 주세요.');
+                return false;
+            }
+
+            var chk_arr = [];
+            $('input:checkbox[name=chk]:checked').each(function () {
+                var chk = $(this).data('id');
+                chk_arr.push(chk);
+            })
+
+            var formData = {};
+            formData.LinkID = chk_arr;
+
+            $.ajax({
+                url: "/Store/LovelyLinkRemove",
+                type: "POST",
+                data: formData,
+                dataType: "JSON",
+                success: function (data) {
+                    if (data.ResultCode == "1") {
+                        alert('삭제되었습니다.');
+                        getLovelyLink();
+                    }
+                    $('.link_box').eq(remove).remove();
+                },
+                error: function (request, status, error) {
+                    alert("오류가 발생했습니다.");
+                }
+            });
+        }
+
+        function fn_AllChk() {
+            var len = $('input:checkbox[name=chk]').length;
+            var clen = $('input:checkbox[name=chk]:checked').length;
+            if (len == clen) {
+                $('input:checkbox[name=chk]').prop('checked', false);
+            }
+            else {
+                $('input:checkbox[name=chk]').prop('checked', true);
+            }
+            fn_GetChkLen();
+        }
+
+        function fn_GetChkLen() {
+            var clen = $('input:checkbox[name=chk]:checked').length;
+            $('#chk_len').html(clen);
+        }
+
+        $(function () {
+            getLovelyLink();
+
+            new Sortable(link_box, {
+                handle: '.sort',
+                animation: 150,
+                onEnd: function (evt) {
+                    var list = new Array();
+
+                    $("#link_box div.link_box").each(function (index) {
+                        var id = $(this).data("id");
+                        list.push(id);
+                    });
+
+                    var Param = {};
+                    Param.LinkID = list;
+
+                    $.ajax({
+                        url: "http://www.sellovely.com/Store/LovelyLinkSetSort",
+                        type: "post",
+                        data: Param,
+                        dataType: "json",
+                        async: false,
+                        success: function (result) {
+                        },
+                        error: function (request, status, error) {
+                            alert("오류가 발생했습니다.");
+                        }
+                    });
+                }
+            });
+
+            fn_Init();
+
+            var curURL = location.href;
+            var curTitle = document.getElementsByTagName("TITLE")[0].text;
+            var a = window.navigator.userAgent.toLowerCase()
+            var isIOS = a.indexOf("mac os") > -1;
+
+            if (isIOS) {
+                $("[data-role=androidLinkCopy]").remove();
+                $("[data-role=iosLinkCopy]").show();
+            }
+            //var short_url = 'https://www.sellovely.com/mangogage';
+            var short_url = 'www.sellovely.com/mangogage';
+
+            $(".shareLayer-copy-link-url").val(short_url);
+            $("[data-role=androidLinkCopy]").attr("data-clipboard-text", short_url);
+
+            //$('#minishop').load('/m/minishop/minishop_mainD_new.asp?dealerID=sani107@naver.com&UserDomain=mangogage');
+
+        })
+    </script>
+
+</body>
+</html>

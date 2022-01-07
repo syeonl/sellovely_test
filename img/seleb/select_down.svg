@@ -1,0 +1,19 @@
+<svg id="그룹_5909" data-name="그룹 5909" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #575757;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_1951" data-name="사각형 1951" class="cls-1" width="16" height="16" transform="translate(16) rotate(90)"/>
+  <path id="패스_1968" data-name="패스 1968" class="cls-2" d="M4.094,0,2.047,1.842,0,3.684,2.047,5.527,4.094,7.369" transform="translate(4.094 10.268) rotate(-90)"/>
+</svg>

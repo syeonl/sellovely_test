@@ -1,0 +1,18 @@
+.sitemap_container .sitemap_box {width: 1000px; margin: 0 auto; padding: 50px 0;}
+.sitemap_box h1 {font-size: 34px; font-weight: 500; text-align: center;}
+
+.sitemap_box .sitemap_wrap dl {width: 100%; overflow: hidden; border-bottom: 1px solid #ddd;}
+.sitemap_box .sitemap_wrap dl dt {width: 20%; float: left; padding: 20px 0;}
+.sitemap_box .sitemap_wrap dl dt>a {font-size: 18px; font-weight: 500;}
+.sitemap_box .sitemap_wrap dl dd {width: 80%; float: right; padding: 20px 0; border-bottom: 1px solid #eee;}
+.sitemap_box .sitemap_wrap dl dd>p {float: left; width: 20%; font-size: 16px;}
+.sitemap_box .sitemap_wrap dl dd>p:hover {color: #292929; text-decoration: underline;}
+.sitemap_box .sitemap_wrap dl:first-child dd {border-bottom: none;}
+.sitemap_box .sitemap_wrap dl dd:last-child {border-bottom: none;}
+
+.sitemap_box .sitemap_wrap dl dd .site {float: left;}
+.sitemap_box .sitemap_wrap dl dd .site li {display: inline-block; padding: 0 20px;}
+.sitemap_box .sitemap_wrap dl dd .site li>a {font-size: 14px; color: #666;}
+.sitemap_box .sitemap_wrap dl dd .site li>a:hover {color: #292929; text-decoration: underline;}
+
+.site_hover:hover {color: #292929; text-decoration: underline;}

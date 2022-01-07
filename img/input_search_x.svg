@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: aqua;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #b2b2b2;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="그룹_4395" data-name="그룹 4395" transform="translate(-437 -179)">
+    <rect id="사각형_3827" data-name="사각형 3827" class="cls-1" width="30" height="30" transform="translate(437 179)"/>
+    <g id="그룹_1687" data-name="그룹 1687" transform="translate(444.8 186.8)">
+      <g id="그룹_4387" data-name="그룹 4387" transform="translate(0 0)">
+        <path id="패스_1095-3" data-name="패스 1095-3" class="cls-2" d="M453.2,188a7.2,7.2,0,1,1-7.2,7.2A7.2,7.2,0,0,1,453.2,188Z" transform="translate(-446 -188)"/>
+      </g>
+      <g id="그룹_4388" data-name="그룹 4388" transform="translate(0 0)">
+        <path id="패스_1097-3" data-name="패스 1097-3" class="cls-2" d="M453.2,188a7.2,7.2,0,1,0,7.2,7.2A7.2,7.2,0,0,0,453.2,188Z" transform="translate(-446 -188)"/>
+      </g>
+      <g id="그룹_4389" data-name="그룹 4389" transform="translate(0 0)">
+        <path id="패스_1096-3" data-name="패스 1096-3" class="cls-2" d="M453.2,188a7.2,7.2,0,1,1-7.2,7.2A7.2,7.2,0,0,1,453.2,188Z" transform="translate(-446 -188)"/>
+      </g>
+      <g id="그룹_4390" data-name="그룹 4390" transform="translate(0 0)">
+        <path id="패스_1098-3" data-name="패스 1098-3" class="cls-2" d="M453.2,188a7.2,7.2,0,1,0,7.2,7.2A7.2,7.2,0,0,0,453.2,188Z" transform="translate(-446 -188)"/>
+      </g>
+      <path id="패스_1083" data-name="패스 1083" class="cls-2" d="M453.2,202.4a7.2,7.2,0,1,1,7.2-7.2A7.2,7.2,0,0,1,453.2,202.4Z" transform="translate(-446 -188)"/>
+    </g>
+    <g id="그룹_4391" data-name="그룹 4391" transform="translate(449.1 191.1)">
+      <rect id="사각형_3828" data-name="사각형 3828" class="cls-3" width="0.849" height="7.354" transform="translate(5.8 5.2) rotate(135)"/>
+      <rect id="사각형_3829" data-name="사각형 3829" class="cls-3" width="0.849" height="7.354" transform="translate(5.2 0) rotate(45)"/>
+    </g>
+  </g>
+</svg>
